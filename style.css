@@ -111,9 +111,14 @@ text-transform: uppercase;
 
 .nav_link {
 display: inline-block;
-vertical-align: top;
-position: relative;
+
+display: flex;
+justify-content: space-between;
+
+left: 300px;
 margin: 0 15px;
+ 
+
 color: #8B4513;
 text-decoration: none;
 transition: color 0.2s linear;
@@ -159,7 +164,6 @@ background-size: cover;
 color: #000;
 }
 
-/* Button action */
 .btn-oval {
 display: inline-block;
 vertical-align: top;
