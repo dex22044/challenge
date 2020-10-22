@@ -103,7 +103,7 @@ body {
 }
 
 .btn:hover {
-    color: #b85c00;
+    background-color: #c889db;
     color: rgb(7, 5, 46);
 }
 
@@ -120,6 +120,8 @@ body {
     width: 50%;
     flex: 0 0 auto;
     padding: 0 50px;
+    background-image: url(css/img1.JPG);
+    background-size: 100%;
 
 }
 /* Content end */
@@ -145,6 +147,7 @@ body {
 .topics_nav {
     font-size: 25px;
     padding-top: 15px;
+    line-height: 1.5;
 }
 
 .topics_link {
