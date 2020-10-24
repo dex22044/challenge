@@ -22,9 +22,8 @@ body {
 
 /* Menu */
 .menu {
-
     background-color: #063852;
-
+    position: fixed;
     height: 1500px;
     flex: 0 0 auto;
     padding: 0 50px;
@@ -43,6 +42,8 @@ body {
 /* Nav menu */
 
 .nav {
+
+
     font-size: 30px;
     text-transform: uppercase;
     padding-top: 15px;
@@ -73,40 +74,58 @@ body {
 }
 
 /* Button menu */
-.button {
-    margin-top: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    -webkit-background-size:cover;
-    background-size: cover;
-    color: #000;
+
+.button-hide {
+    margin-top: 20px;
+    margin-left: 40px;
+    background: transparent;
+    border-width: 0;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
 }
 
-.btn-oval {
-    display: inline-block;
-    vertical-align: top;
-    padding: 20px 50px;
-
-    border-radius: 100px;
-    border: 3px solid rgb(0, 0, 0);
-
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform:uppercase;
-    text-decoration: none;
-    background-color: #a000d1;
-    transition: background 0.2s linear, color .1s linear;
+.button-hide span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: #170250;
+    color: #fffbb0;
+    padding: 0 30px;
+    line-height: 40px;
 }
 
-.btn:hover {
-    background-color: #c889db;
-    color: rgb(7, 5, 46);
+.button-hide:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: #ff4675;
+    z-index: 1;
+    transition: .4s ease-out;
 }
 
+.button-hide:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: #f0910f;
+    transition: .4s ease-out .1s;
+}
+
+.button-hide:hover:before {
+    transform: translate(5px, 5px);
+}
+
+.button-hide:hover:after {
+    transform: translate(-5px, -5px);
+}
 
 /* Menu end */
 
