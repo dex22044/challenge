@@ -24,8 +24,9 @@ body {
 .menu {
     background-color: #063852;
     position: fixed;
+    top: 0;
+    left: 0;
     height: 1500px;
-    flex: 0 0 auto;
     padding: 0 50px;
     width: 20%;
     padding-top: 30px;
@@ -47,7 +48,7 @@ body {
 
 /* Nav menu */
 
-.nav_link1 {
+.nav_link {
     position: relative;
     overflow: hidden;
 
@@ -71,12 +72,12 @@ body {
     transition: color 0.2s linear;
 }
 
-.nav_link1:hover {
+.nav_link:hover {
     color: #ff8f1f;
 
 }
-.nav_link1:before,
-.nav_link1:after {
+.nav_link:before,
+.nav_link:after {
 	content: "";
 	position: absolute;  
     height: 200px;
@@ -90,15 +91,15 @@ body {
     z-index: -1;
     transform: scale(0);
 }
-.nav_link1:before {
+.nav_link:before {
     background:  #be9c7a;  
     transition: .8s ease-out;
 }
-.nav_link1:after {   
+.nav_link:after {   
     transition: .4s ease-in .3s;
 }
-.nav_link1:hover:before,
-.nav_link1:hover:after{
+.nav_link:hover:before,
+.nav_link:hover:after{
     opacity: 0.8;
     transform: scale(4);
 }
@@ -166,9 +167,10 @@ body {
 
 /* Content */
 .content {
+
     background-color: #1072a7;
-    height: 1500px;
-    width: 50%;
+    height: 2500px;
+    width: 100%;
     flex: 0 0 auto;
     padding: 0 50px;
     background-image: url(css/img1.JPG);
@@ -181,11 +183,12 @@ body {
 
 /* Topics*/
 .topics {
-    
     background-color: #063852;
     height: 1500px;
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 30%;
-    flex: 0 0 auto;
     padding: 0 50px;
     padding-top: 30px;
 }
