@@ -49,7 +49,9 @@ body {
 /* Nav menu */
 
 .nav_link {
-
+    display: flex;
+    
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
 
@@ -62,11 +64,8 @@ body {
     margin: 0 auto;
 
     border-radius: 50px;
-
-    display: flex;
-    justify-content: space-between;
-
-    padding-left: 50px;
+    
+    padding-right: 50px;
 
     color: #ff8f1f;
     text-decoration: none;
@@ -76,7 +75,7 @@ body {
 .nav_link img {
     height: 32px; 
     width : 32px;
-    border-radius: 24px; 
+    border-radius: 20px; 
     margin-top: 8px;
 }
 
@@ -94,7 +93,7 @@ body {
 	position: absolute;  
     height: 200px;
     
-    left: -50%;
+    left: -25%;
     margin-top: -100px;    
     top: 50%;
     width: 200px;
