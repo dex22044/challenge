@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&f..');
-body {
-font-family: 'Kaushan Script', cursive;
-font-family: 'Nunito', sans-serif;
-/*color: limegreen;*/
-}
 
 * {
     margin: 0;
@@ -14,6 +9,9 @@ font-family: 'Nunito', sans-serif;
 
 /* Container = body */
 body {
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Nunito', sans-serif;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -30,6 +28,8 @@ body {
     padding: 0 50px;
     width: 20%;
     padding-top: 30px;
+    min-width: 400px;
+    max-width: 400px;
 }
 
 /* Logo menu */
@@ -49,6 +49,7 @@ body {
 /* Nav menu */
 
 .nav_link {
+
     position: relative;
     overflow: hidden;
 
@@ -65,11 +66,22 @@ body {
     display: flex;
     justify-content: space-between;
 
-    padding-left: 65px;
+    padding-left: 50px;
 
     color: #ff8f1f;
     text-decoration: none;
     transition: color 0.2s linear;
+}
+
+.nav_link img {
+    height: 32px; 
+    width : 32px;
+    border-radius: 24px; 
+    margin-top: 8px;
+}
+
+.nav_link div{
+    float: left;
 }
 
 .nav_link:hover {
@@ -167,6 +179,9 @@ body {
 
 /* Content */
 .content {
+    position: fixed;
+    left: 400px;
+    padding-right: 800px;
 
     background-color: #1072a7;
     height: 2500px;
@@ -191,6 +206,9 @@ body {
     width: 30%;
     padding: 0 50px;
     padding-top: 30px;
+
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .topics_title {
@@ -213,6 +231,7 @@ body {
 
     left: 300px;
     margin: 0 15px;
+    
 
     color: #f3993f;
     text-decoration: none;
@@ -231,70 +250,7 @@ body {
 
 
 
-/* !!!Profile!!! */
-/* phrases profile */
-.phrases {
-    background-image: url(css/vdnh1.JPG);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4032px;
-    padding: 0 50px;
-    width: 50%;
-    padding-top: 30px;
-    flex: 0 0 auto;
-    background-size: 100%;
-}
 
-/* entrance profile */
-.entrance {
-    background-color: #063852;
-    height: 4000px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50%;
-    padding: 0 50px;
-    padding-top: 30px;
-}
-
-/* button_classic profile */
-
-.button-classic {
-    display: inline-flex;
-    align-items: center;
-    font-size: 12px;
-    letter-spacing: .05em;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 12px 20px;
-    color: #904C6E;
-    background: white;
-    border: 1px solid;
-    cursor: pointer;
-    transition: .3s linear;
-}
-
-.button-classic:hover {
-    background: #F0C7A7;
-}
-
-.button-classic:after {
-    content: "\e82e";
-    font-family: Linearicons-Free;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    margin-left: 30px;
-    padding-left: 20px;
-    border-left: 1px solid;
-}
 /* */
 /* */
 /* */

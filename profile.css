@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&f..');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Container = body */
+body {
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Nunito', sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Container = body */
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/* !!!Profile!!! */
+/* phrases profile */
+.about_us {
+    background-image: url(css/vdnh1.JPG);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4032px;
+    padding: 0 50px;
+    width: 50%;
+    padding-top: 30px;
+    flex: 0 0 auto;
+    background-size: 100%;
+}
+
+/* entrance profile */
+.entrance {
+    background-color: #063852;
+    height: 4000px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 0 50px;
+    padding-top: 30px;
+}
+
+/* button_classic profile */
+
+.button_classic {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: .05em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    color: #904C6E;
+    background: white;
+    border: 1px solid;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.button_classic:hover {
+    background: #F0C7A7;
+}
+
+.button_classic:after {
+    content: "\e82e";
+    font-family: Linearicons-Free;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 1px solid;
+}
+
+.phrases {
+    background-color: #063852;
+    height: 1500px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    padding: 0 50px;
+    padding-top: 30px;
+
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.phrases {
+    font-size: 40px;
+    font-weight: 700;
+    color: #E6DF44;
+}
+
+.phrases {
+    font-size: 25px;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+
+.phrases {
+    display: inline-block;
+
+    display: flex;
+    justify-content: space-between;
+
+    left: 300px;
+    margin: 0 15px;
+    
+
+    color: #f3993f;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.phrases:hover {
+    color: #f3ba3f;
+
+}
+
+.phrases:hover:after {
+    opacity: 1;
+}
