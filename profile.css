@@ -17,13 +17,6 @@ body {
     flex-wrap: nowrap;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-}
-
 /* Container = body */
 body {
     display: flex;
@@ -35,20 +28,45 @@ body {
 /* !!!Profile!!! */
 /* phrases profile */
 .about_us {
-    background-image: url(css/vdnh1.JPG);
+    background-size: 100%;
+    background-color:rgba(0,0,0,.3);
+    background-image: url(css/vdnh2.JPG);
     position: fixed;
     top: 0;
     left: 0;
-    height: 4032px;
+    height: 100%;
     padding: 0 50px;
     width: 50%;
     padding-top: 30px;
     flex: 0 0 auto;
-    background-size: 100%;
+
 }
+
+
+.phrases {
+    margin-top: 100px;
+    margin-left: 65px;
+    display: flex;
+    
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+
+    padding-right: 20px;
+    text-align: center;
+    color: #ff8f1f;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
 
 /* entrance profile */
 .entrance {
+    margin-left: 65px;
     background-color: #063852;
     height: 4000px;
     position: fixed;
@@ -56,93 +74,100 @@ body {
     right: 0;
     width: 50%;
     padding: 0 50px;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
-/* button_classic profile */
 
-.button_classic {
-    display: inline-flex;
-    align-items: center;
-    font-size: 12px;
-    letter-spacing: .05em;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 12px 20px;
-    color: #904C6E;
-    background: white;
-    border: 1px solid;
-    cursor: pointer;
-    transition: .3s linear;
-}
+.forget_password{
 
-.button_classic:hover {
-    background: #F0C7A7;
-}
-
-.button_classic:after {
-    content: "\e82e";
-    font-family: Linearicons-Free;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    margin-left: 30px;
-    padding-left: 20px;
-    border-left: 1px solid;
-}
-
-.phrases {
-    background-color: #063852;
-    height: 1500px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30%;
-    padding: 0 50px;
-    padding-top: 30px;
-
-    max-width: 300px;
-    min-width: 300px;
-}
-
-.phrases {
-    font-size: 40px;
-    font-weight: 700;
-    color: #E6DF44;
-}
-
-.phrases {
-    font-size: 25px;
-    padding-top: 15px;
-    line-height: 1.5;
-}
-
-.phrases {
-    display: inline-block;
-
+    padding-left: 300px;
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
 
-    left: 300px;
-    margin: 0 15px;
-    
+    line-height: 1.5;
 
-    color: #f3993f;
+    text-align: center;
+    color: #ff8f1f;
     text-decoration: none;
     transition: color 0.2s linear;
 }
 
-.phrases:hover {
-    color: #f3ba3f;
+.forget_password:hover {
+    color:#f3ba3f;
 
 }
 
-.phrases:hover:after {
-    opacity: 1;
-}
+
+.topics_title {
+    padding: 50px 20px;
+    text-align: center;
+  } 
+  .topics_title h1 {
+    position: relative;
+    color: #E6DF44;
+    font-size: 50px;
+    font-weight: normal;
+    padding: 8px 20px 7px 20px;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+  }
+  .topics_title h1:before {
+    content: ""; 
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -28px;
+    left: -28px;
+    border: 4px solid #E6DF44;
+    box-sizing: border-box;
+  }
+  @media (max-width: 450px) {
+    .topics_title h1 {font-size: 36px;}
+    .topics_title h1:before {
+      width: 20px;
+      height: 20px;
+      top: -20px;
+      left: -20px;
+    }
+  }
+/* button_classic profile */
+
+
+
+.button_classic {
+    cursor: pointer;
+    font-size: large;
+    background-color: #063852;;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    transition: .4s;
+  }
+  .button_classic:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: .4s;
+  }
+    .button_classic:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+  }
