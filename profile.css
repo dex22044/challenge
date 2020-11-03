@@ -78,6 +78,10 @@ body {
 }
 
 
+.login{
+  opacity: 1;
+}
+
 .forget_password{
 
     padding-left: 300px;
