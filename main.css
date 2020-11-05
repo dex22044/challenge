@@ -172,6 +172,64 @@ body {
     transform: translate(-5px, -5px);
 }
 
+
+
+.button-download {
+    margin-top: 30px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 30px;
+    cursor: pointer;
+
+
+    position: relative;
+    overflow: hidden;
+    height: 55px; 
+    min-width: 200px;
+    margin-right: 20px;
+
+    background: #170250;
+    color: white;
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 12px 20px;
+    border: none;
+    transition: .2s linear;
+
+  }
+
+
+.button-download:hover {
+    background: #200b5a;
+}
+
+.button-download:after {
+
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin-left: 30px;
+    padding-left: 20px;
+
+    border-left: 1px solid;
+}
+
+.button-download span{
+    padding-left: 20px;
+    padding-right: 10px;
+
+    
+}
+
+
+
 /* Menu end */
 
 
@@ -191,6 +249,20 @@ body {
     background-image: url(css/img1.JPG);
     background-size: 100%;
 
+}
+
+.backgrr {
+    position: fixed;
+    left: 400px;
+    padding-right: 800px;
+
+    background-color: black;
+    height: 2500px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0 50px;
+    background-size: 100%;
+    opacity: 0.7;
 }
 /* Content end */
 
@@ -247,6 +319,7 @@ body {
     opacity: 1;
 }
 /* Topics end*/
+
 
 
 
