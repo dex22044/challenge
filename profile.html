@@ -18,32 +18,32 @@
 </div>
 
 <div class="entrance">
-        <input class="login" id="userPassword" type="text" value="Логин" name="password">
-        <button class="button_classic">Войти</button>
-        <a class="forget_password" href="forget_your_password">Забыли пароль?</a>
-        <div class="topics_title"><h1>Присоединяйся к Challenge прямо сейчас!</h1> </div>
-
-        <button class="button_classic">Зарегистрироваться</button>
-
-
         <table class="body_table">
                 <tr>
-                    <td style="max-width: 15px; width: 10px;">Логин</td>
+                    <td class="enter">Логин</td>
                     <td><input type="text" class="input_box" /></td>
                 </tr>
+
                 <tr>
-                    <td>Пароль</td>
+                    <td class="enter">Пароль</td>
                     <td><input type="text" class="input_box" /></td>
                 </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="Авторизоваться" class="input_box" /></td>
+
+                <tr> 
+                      <!--<td colspan="2"><input type="submit" value="Войти" class="button_classic" /></td> -->
+                      <td colspan="2">
+                        <a class="button_classic">Войти</a>
+                      </td>
                 </tr>
+
                 <tr>
                     <td colspan="2">
-                        <a href="/Auth/Registration">Еще нет аккаунта? Зарегестрироваться</a>
+                        <div class="topics_title"><h1>Присоединяйся к Challenge прямо сейчас!</h1> </div>
+                        <a class="button_classic" href="/Auth/Registration"> Зарегестрироваться</a>
                     </td>
                 </tr>
-            </table>
+
+        </table>
 </div>
 
 

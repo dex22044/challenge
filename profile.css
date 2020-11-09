@@ -42,7 +42,6 @@ body {
 
 }
 
-
 .phrases {
     margin-top: 100px;
     margin-left: 65px;
@@ -82,25 +81,17 @@ body {
   opacity: 1;
 }
 
-.forget_password{
+.enter{
 
-    padding-left: 300px;
     display: flex;
     position: relative;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 25px;
 
     line-height: 1.5;
 
-    text-align: center;
     color: #ff8f1f;
     text-decoration: none;
-    transition: color 0.2s linear;
-}
-
-.forget_password:hover {
-    color:#f3ba3f;
-
 }
 
 
