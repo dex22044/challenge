@@ -237,7 +237,6 @@ body {
 
 /* Content */
 .content {
-    position: fixed;
     left: 400px;
     padding-right: 800px;
 
@@ -250,7 +249,7 @@ body {
     background-size: 100%;
 
 }
-
+/*
 .backgrr {
     position: fixed;
     left: 400px;
@@ -261,8 +260,26 @@ body {
     width: 100%;
     flex: 0 0 auto;
     padding: 0 50px;
-    background-size: 100%;
+
     opacity: 0.7;
+}
+*/
+.icon{
+
+    position: fixed;
+    top: 200px;
+    left: 1110px;
+    padding-right: 800;
+
+    display: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+
+
+    cursor: pointer;
+
 }
 /* Content end */
 
