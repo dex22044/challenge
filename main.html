@@ -4,13 +4,19 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="main.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="main.js"></script>
+<meta name="viewport" content="width=device-width">
 
 <title>
     Главная
 </title>
+
 </head>
 
 <body>
+    <script src="main.js"></script>
+
 <div class="menu">
     <h1 class="logo">Logo</h1>
       <nav class="nav">
@@ -25,33 +31,31 @@
     </nav>
 
     <button class="button-hide"><span>Скрыть</span></button>
-
-    <button type="submit" class="button-download"><img style="height: 30px; width: 30px; " src="css/download.png"> <span>Загрузить</span> </button>
+    <button type="submit" class="button-download"><img src="css/download.png"> <span>Загрузить</span> </button> 
 </div>
 
 
+
 <div class="content">
-    <div class="backgrr">
+    <button onclick="hidemenu" class="button-hide2"><span>Скрыть</span></button>
+
         <div class="icon">
-            <img src="css/like.png" > <br> 
-            <img src="css/comments.png" ><br>
-            <img src="css/audio.png" > <br>
-            <img src="css/share.png"> <br>
-            <img src="css/more.png"> <br>
+            <img class="icon_hover" src="css/like.png" > <br> 
+            <img src="css/comments.png" > <br>
+            <img id="image" onclick="music_off()" src="css/audio.png" > <br>
+            <img src="css/more.png" > <br>
         </div>
-    <!-- 
+
     <ul class="bxslider">
         <li><img src="css/img2.JPG"></li>
         <li><img src="css/img3.JPG"></li>
         <li><img src="css/eye.JPG"></li>
         <li><img src="css/vdnh1.JPG"></li>
       </ul>
-    -->
-    </div>
 </div>
 
 <div class="topics">
-    <h2 class="topics_title">Актуальные темы</h2>
+    <h2  onclick="click_topics" class="topics_title">Актуальные темы</h2>
         <nav class="topics_nav"> 
             <a class="topics_link" href="#topics_link">Здесь</a>
             <a class="topics_link" href="#topics_link">Будут</a>
@@ -60,7 +64,6 @@
             <a class="topics_link" href="#topics_link">Темы</a>
             <a class="topics_link" href="#topics_link">Челленджей</a>
         </nav>
-    <button class="button-hide"><span>Скрыть</span></button>
 </div>
 
 
