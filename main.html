@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="main.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="main.js"></script>
 <meta name="viewport" content="width=device-width">
 
@@ -29,29 +29,28 @@
         <a class="nav_link" href="#profile">  <img src="css/user.png"> Профиль</a>
         <a class="nav_link" href="#customization">  <img src="css/settings.png"> Настройки</a>
     </nav>
-
-    <button class="button-hide"><span>Скрыть</span></button>
+    <button class="button-hide" onclick="closeMenu();"><span>Скрыть</span></button>
     <button type="submit" class="button-download"><img src="css/download.png"> <span>Загрузить</span> </button> 
 </div>
 
 
 
 <div class="content">
-    <button onclick="hidemenu" class="button-hide2"><span>Скрыть</span></button>
+    <button class="button-hide2" onclick="openMenu();"><span>Показать</span></button>
 
         <div class="icon">
             <img class="icon_hover" src="css/like.png" > <br> 
-            <img src="css/comments.png" > <br>
-            <img id="image" onclick="music_off()" src="css/audio.png" > <br>
-            <img src="css/more.png" > <br>
+            <img class="icon_hover" src="css/comments.png" > <br>
+            <img class="icon_hover" id="image" onclick="music_off()" src="css/audio.png" > <br>
+            <img class="icon_hover" src="css/more.png" > <br>
         </div>
 
-    <ul class="bxslider">
+    <!--<ul class="bxslider">
         <li><img src="css/img2.JPG"></li>
         <li><img src="css/img3.JPG"></li>
         <li><img src="css/eye.JPG"></li>
         <li><img src="css/vdnh1.JPG"></li>
-      </ul>
+      </ul> -->
 </div>
 
 <div class="topics">

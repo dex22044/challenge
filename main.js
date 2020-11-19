@@ -33,27 +33,23 @@ function music_off(image) {
 
 
 /* Открытие меню */
-var main = function() { 
-    $('.button-hide2').click(function() { 
-        $('.menu').animate({ 
-            left: '0px' 
-        }, 200); 
-        $('body').animate({ 
-            left: '285px' 
-        }, 400); 
-    });
-
+function openMenu() {
+    $('.menu').animate({
+        left: '0px'
+    }, 200);
+    $('body').animate({
+        left: '350px'
+    }, 400);
+}
 
 /* Закрытие меню */
-    $('.button-hide').click(function() { 
-        $('.menu').animate({ 
-            left: '-285px' 
-        }, 200); 
-        
-    $('body').animate({ 
-            left: '0px' 
-        }, 400);
-    });
-};
+function closeMenu() {
+    $('.menu').animate({
+        left: '-350px'
+    }, 200);
 
+    $('body').animate({
+        left: '0px'
+    }, 400);
+};
 $(document).ready(main); 
