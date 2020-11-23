@@ -167,61 +167,6 @@ body {
     transform: translate(-5px, -5px);
 }
 
-/* Button hide 2 */
-.button-hide2 {
-    font-family: 'Nunito', sans-serif;
-    margin-top: 30px;
-    margin-left: 50px;
-    background: transparent;
-    border-width: 0;
-    position: fixed;
-    cursor: pointer;
-    font-size: 30px;
-    transition: .3s;
-    z-index: 0;
-}
-
-.button-hide2 span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    background: #170250;
-    color: #fffbb0;
-    padding: 0 30px;
-    line-height: 40px;
-}
-
-.button-hide2:before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    left: -5px;
-    top: -5px;
-    background: #ff4675;
-    z-index: 1;
-    transition: .4s ease-out;
-}
-
-.button-hide2:after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    right: -5px;
-    bottom: -5px;
-    background: #f0910f;
-    transition: .4s ease-out .1s;
-}
-
-.button-hide2:hover:before {
-    transform: translate(5px, 5px);
-}
-
-.button-hide2:hover:after {
-    transform: translate(-5px, -5px);
-}
-
 
 /* Button download */
 
@@ -287,8 +232,15 @@ body {
     width: 100%;
     flex: 0 0 auto;
 
+    background-color: #002336;
+    background-repeat: repeat-y;
+    background-position: center;
     background-image: url(css/img22.JPEG);
-    background-size: 100%;
+    background-size: 820px;
+}
+.bxslider {
+    width: 1026px;
+    height: 883px;
 }
 /*
 .backgrr {
@@ -306,19 +258,131 @@ body {
     opacity: 0.7;
 }
 */
-.icon{
+.icon {
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
 
     top: 200px;
-    left: 1110px;
+    left: 1065px;
     margin-top: 40px;
     margin-right: 30px;
 }
-.icon_hover{
+.icon_hover {
     margin: 5px;
+}
+
+/* Button show */
+.button-show {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 530px;
+    margin-left: 50px;
+    background: transparent;
+    border-width: 0;
+    position: fixed;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s;
+    z-index: 0;
+}
+
+.button-show span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: #170250;
+    color: #fffbb0;
+    padding: 0 30px;
+    line-height: 40px;
+}
+
+.button-show:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: #ff4675;
+    z-index: 1;
+    transition: .4s ease-out;
+}
+
+.button-show:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: #f0910f;
+    transition: .4s ease-out .1s;
+}
+
+.button-show:hover:before {
+    transform: translate(5px, 5px);
+}
+
+.button-show:hover:after {
+    transform: translate(-5px, -5px);
+}
+
+
+
+/* Button show-topics */
+.button-show-topics {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 480px;
+    margin-left: 1280px;
+    background: transparent;
+    border-width: 0;
+    position: fixed;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s;
+    z-index: 0;
+}
+
+.button-show-topics span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: #170250;
+    color: #fffbb0;
+    padding: 0 30px;
+    line-height: 40px;
+}
+
+.button-show-topics:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: #ff4675;
+    z-index: 1;
+    transition: .4s ease-out;
+}
+
+.button-show-topics:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: #f0910f;
+    transition: .4s ease-out .1s;
+}
+
+.button-show-topics:hover:before {
+    transform: translate(5px, 5px);
+}
+
+.button-show-topics:hover:after {
+    transform: translate(-5px, -5px);
 }
 /* Content end */
 
@@ -333,11 +397,9 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 350px;
     padding: 0 50px;
     padding-top: 30px;
-    max-width: 300px;
-    min-width: 300px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -375,6 +437,62 @@ body {
 
 .topics_link:hover:after {
     opacity: 1;
+}
+
+
+/* Button hide-topics */
+.button-hide-topics {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 30px;
+    margin-left: 70px;
+    background: transparent;
+    border-width: 0;
+    position: fixed;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s;
+    z-index: 0;
+}
+
+.button-hide-topics span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: #170250;
+    color: #fffbb0;
+    padding: 0 30px;
+    line-height: 40px;
+}
+
+.button-hide-topics:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: #ff4675;
+    z-index: 1;
+    transition: .4s ease-out;
+}
+
+.button-hide-topics:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: #f0910f;
+    transition: .4s ease-out .1s;
+}
+
+.button-hide-topics:hover:before {
+    transform: translate(5px, 5px);
+}
+
+.button-hide-topics:hover:after {
+    transform: translate(-5px, -5px);
 }
 /* Topics end*/
 

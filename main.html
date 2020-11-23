@@ -36,15 +36,14 @@
 
 
 <div class="content">
-    <button class="button-hide2" onclick="openMenu();"><span>Показать</span></button>
-
+    <button class="button-show" onclick="openMenu();"><span>Показать</span></button>
         <div class="icon">
             <img class="icon_hover" src="css/like.png" > <br> 
             <img class="icon_hover" src="css/comments.png" > <br>
             <img class="icon_hover" id="image" onclick="music_off()" src="css/audio.png" > <br>
             <img class="icon_hover" src="css/more.png" > <br>
         </div>
-
+        <button class="button-show-topics" onclick="openTopics();"><span><</span></button>
     <!--<ul class="bxslider">
         <li><img src="css/img2.JPG"></li>
         <li><img src="css/img3.JPG"></li>
@@ -63,6 +62,8 @@
             <a class="topics_link" href="#topics_link">Темы</a>
             <a class="topics_link" href="#topics_link">Челленджей</a>
         </nav>
+     <button class="button-hide-topics" onclick="closeTopics();"><span>></span></button>
+
 </div>
 
 

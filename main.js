@@ -32,7 +32,7 @@ function music_off(image) {
 }
 
 
-/* Открытие меню */
+/* Open menu */
 function openMenu() {
     $('.menu').animate({
         left: '0px'
@@ -42,10 +42,31 @@ function openMenu() {
     }, 400);
 }
 
-/* Закрытие меню */
+/* Close menu */
 function closeMenu() {
     $('.menu').animate({
         left: '-350px'
+    }, 200);
+
+    $('body').animate({
+        left: '0px'
+    }, 400);
+};
+
+/* Open relevant topics  */
+function openTopics() {
+    $('.topics').animate({
+        left: '1170px'
+    }, 200);
+    $('body').animate({
+        left: '0px'
+    }, 400);
+}
+
+/* Close relevant topics */
+function closeTopics() {
+    $('.topics').animate({
+        left: '1900px'
     }, 200);
 
     $('body').animate({
