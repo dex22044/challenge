@@ -239,6 +239,7 @@ body {
     background-size: 820px;
 }
 .bxslider {
+    position: fixed;
     width: 1026px;
     height: 883px;
 }
@@ -499,6 +500,65 @@ body {
 
 
 
+
+
+
+* {box-sizing: border-box;}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bx-wrapper {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.bx-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.bx-prev, .bx-next {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  border: 1px solid rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.7);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all ease .3s;
+  z-index: 10;
+  cursor: pointer;
+}
+.bx-prev:hover, .bx-next:hover, .bx-prev:active, .bx-next:active {
+  background: #6BA7BD;
+  border-color: #6BA7BD;
+}
+.bx-prev {left: 20px;}
+.bx-next {right: 20px;}
+.bx-prev:before, .bx-next:before {font-family: "FontAwesome";}
+.bx-prev:before {content: "\f104";}
+.bx-next:before {content: "\f105";}
+.bx-caption {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: .3s ease-in-out;
+  padding: 2em;
+  background: rgba(255,255,255,.9);
+  z-index: 2;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+}
 
 /* */
 /* */
