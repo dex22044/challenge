@@ -1,5 +1,3 @@
-$(document).ready(main); 
-
 /* MENU */
 /* Open menu */
 function openMenu() {
@@ -41,13 +39,15 @@ function music_off(image) {
 /* Bxslider */
 jQuery(document).ready(function bxslider(){
         jQuery('.bxslider').bxSlider({
-           pager: false,
-           captions: true,
-           nextText: '',
-           prevText: '',
-           useCSS: false,
-           easing: 'jswing',
-           speed: 500
+            mode: 'vertical',
+            pager: false,
+            captions: true,
+            nextText: '',
+            prevText: '',
+            useCSS: false,
+            easing: 'jswing',
+            speed: 500,
+            slideMargin: 3,
            });
         });
 
