@@ -1,3 +1,5 @@
+let isHideTopics = false;
+
 /* MENU */
 /* Open menu */
 function openMenu() {
@@ -59,25 +61,32 @@ jQuery(document).ready(function bxslider(){
 
 /* TOPICS */
 
-/* Open relevant topics  */
-function openTopics() {
-    $('.topics').animate({
-        left: '1170px'
-    }, 200);
-    $('body').animate({
-        left: '0px'
-    }, 400);
-}
-
 /* Close relevant topics */
-function closeTopics() {
-    $('.topics').animate({
-        left: '1900px'
-    }, 200);
+function closeOpenTopics() {
+    let top = document.querySelector('.cOT');
 
-    $('body').animate({
-        left: '0px'
-    }, 400);
+    if(isHideTopics == false){
+        isHideTopics = true;
+        $('.topics').animate({
+            right: '-350px'
+        }, 200);
+
+        $('body').animate({
+            left: '0px'
+        }, 400);
+
+        top.innerHTML = "<";
+    } else {
+        isHideTopics = false;
+        $('.topics').animate({
+            right: '0px'
+        }, 200);
+        $('body').animate({
+            left: '0px'
+        }, 400);
+
+        top.innerHTML = ">";
+    }
 };
 
 /* END TOPICS */

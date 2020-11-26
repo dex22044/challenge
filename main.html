@@ -33,14 +33,14 @@
         <a class="nav_link" href="#profile">  <img src="css/user.png"> Профиль</a>
         <a class="nav_link" href="#customization">  <img src="css/settings.png"> Настройки</a>
     </nav>
-    <button class="button-hide" onclick="closeMenu();"><span>Скрыть</span></button>
-    <button type="submit" class="button-download"><img src="css/download.png"> <span>Загрузить</span> </button> 
+    <button type="submit" class="button-download"><img src="css/download.png"> <span>Загрузить</span> </button>
+    <button class="button-hide" onclick="closeMenu();"><span><</span></button> 
 </div>
 
 
 
 <div class="content">
-    <button class="button-show" onclick="openMenu();"><span>Показать</span></button>
+    <button class="button-show" onclick="openMenu();"><span>></span></button>
 
      <div class="bxslider" ready="bxslider();">
         <li><img src="css/img2.JPG"></li>
@@ -48,14 +48,13 @@
         <li><img src="css/eye.JPG"></li>
       </div> 
 
-
-        <div class="icon">
+    <div class="icon">
             <img class="icon_hover" src="css/like.png" > <br> 
             <img class="icon_hover" src="css/comments.png" > <br>
             <img class="icon_hover" id="image" onclick="music_off()" src="css/audio.png" > <br>
             <img class="icon_hover" src="css/more.png" > <br>
-        </div>
-        <button class="button-show-topics" onclick="openTopics();"><span><</span></button>
+    </div>
+        
 </div>
 
 <div class="topics">
@@ -68,8 +67,7 @@
             <a class="topics_link" href="#topics_link">Темы</a>
             <a class="topics_link" href="#topics_link">Челленджей</a>
         </nav>
-     <button class="button-hide-topics" onclick="closeTopics();"><span>></span></button>
-
+    <button class="button-hide-topics" onclick="closeOpenTopics();"><span class="cOT">></span></button>
 </div>
 
 <!--  -->
