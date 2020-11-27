@@ -1,26 +1,8 @@
 let isHideTopics = false;
 
 /* MENU */
-/* Open menu */
-function openMenu() {
-    $('.menu').animate({
-        left: '0px'
-    }, 200);
-    $('body').animate({
-        left: '350px'
-    }, 400);
-}
 
-/* Close menu */
-function closeMenu() {
-    $('.menu').animate({
-        left: '-350px'
-    }, 200);
 
-    $('body').animate({
-        left: '0px'
-    }, 400);
-};
 
 /* END MENU */
 
@@ -53,17 +35,39 @@ jQuery(document).ready(function bxslider(){
            });
         });
 
-/* END CONTENT */
+/* Open/Close relevant menu */
+function closeOpenMenu() {
+    let top = document.querySelector('.arrow_menu');
+
+    if(isHideTopics == false){
+        isHideTopics = true;
+        $('.menu').animate({
+            left: '-350px'
+        }, 200);
+
+        $('body').animate({
+            right: '0px'
+        }, 400);
+
+        top.innerHTML = "<";
+    } else {
+        isHideTopics = false;
+        $('.menu').animate({
+            left: '0px'
+        }, 200);
+        $('body').animate({
+            right: '0px'
+        }, 400);
+
+        top.innerHTML = ">";
+    }
+};
 
 
 
-
-
-/* TOPICS */
-
-/* Close relevant topics */
+/* Open/Close relevant topics */
 function closeOpenTopics() {
-    let top = document.querySelector('.cOT');
+    let top = document.querySelector('.arrow_topics');
 
     if(isHideTopics == false){
         isHideTopics = true;
@@ -88,5 +92,17 @@ function closeOpenTopics() {
         top.innerHTML = ">";
     }
 };
+
+
+
+/* END CONTENT */
+
+
+
+
+
+/* TOPICS */
+
+
 
 /* END TOPICS */
