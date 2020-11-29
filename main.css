@@ -28,6 +28,8 @@ body {
 /* Logo menu */
 
 .logo {
+    cursor: pointer;
+
     margin-bottom: 30px;
     margin-top: 30px;
     margin-left: 100px;
@@ -36,51 +38,43 @@ body {
     font-weight: 700;
 
     color: #E6DF44;
-    transition: 1.5s; 
-    z-index: 5;
+    transition: 0.8s; 
+}
+
+.logo:hover{
+    color:#37b9ff;
 }
 
 /* Nav menu */
 
 .nav_link {
     display: flex;
-    
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-
-	cursor: pointer;
-    font-size: 32px;
-
-    line-height: 1.5;
-
-    margin: 0 auto;
-
-    border-radius: 50px;
+    cursor: pointer;
 
     padding-right: 50px;
-    
     padding-left: 45px;
-    text-align: left;
-    color: #ff8f1f;
+
     text-decoration: none;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.5;
+    border-radius: 50px;
+    color: #ff8f1f;
     transition: color 0.2s linear;
 }
 
 .nav_link img {
     height: 32px; 
-    width : 32px;
+    width: 32px;
     margin-top: 8px;
     margin-left: 8px;
 }
 
-.nav_link div{
-    float: left;
-}
-
 .nav_link:hover {
-    color: #ff8f1f;
-
+    color: #37b9ff; 
 }
 .nav_link:before,
 .nav_link:after {
@@ -97,8 +91,8 @@ body {
     transform: scale(0);
 }
 .nav_link:before {
-    background:  #967b61;  
-    transition: .8s ease-out;
+    background:  #00517c;  
+    transition: .5s ease-out;
 }
 .nav_link:after {   
     transition: .4s ease-in .3s;
@@ -109,93 +103,32 @@ body {
     transform: scale(4);
 }
 
-
-/* Button menu */
-
-/* Button hide */
-.button-hide {
-    font-family: 'Nunito', sans-serif;
-    top: 300px;
-    left: 10px;
-    background: transparent;
-    border-width: 0;
-    position: relative;
-    cursor: pointer;
-    font-size: 30px;
-    transition: .3s;
-    z-index: 999;
-}
-
-.button-hide span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    background: #170250;
-    color: #fffbb0;
-    padding: 0 30px;
-    line-height: 40px;
-}
-
-.button-hide:before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    left: -5px;
-    top: -5px;
-    background: #ff4675;
-    z-index: 1;
-    transition: .4s ease-out;
-}
-
-.button-hide:after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    right: -5px;
-    bottom: -5px;
-    background: #f0910f;
-    transition: .4s ease-out .1s;
-}
-
-.button-hide:hover:before {
-    transform: translate(5px, 5px);
-}
-
-.button-hide:hover:after {
-    transform: translate(-5px, -5px);
-}
-
-
 /* Button download */
 
 .button-download {
     overflow: hidden;
     cursor: pointer;
     position: relative;
-
     display: inline-flex;
     align-items: center;
 
+    padding: 12px 20px;
+    margin: 30px 30px 30px 30px;
+
     width: 80%;
     height: 55px; 
-
-    margin: 30px 30px 30px 30px;
-   
-    font-family: 'Nunito', sans-serif;
+    
     font-size: 30px;
+    border: none;
     
     background: #170250;
     color: white;
 
-    padding: 12px 20px;
-    border: none;
     transition: .2s linear;
 }
 
 .button-download:hover {
-    background: #200b5a;
+    background: #1b0066;
 }
 
 .button-download:after {
@@ -203,16 +136,27 @@ body {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
     margin-left: 30px;
     padding-left: 20px;
     border-left: 1px solid;
 }
 
 .button-download span{
-    padding-left: 20px;
+    padding-left: 35px;
     padding-right: 10px; 
+    letter-spacing: 1.5px;
+}
+
+.button-download img {
+    height: 45px; 
+    width: 45px;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
 }
 
 /* Menu end */
@@ -326,9 +270,6 @@ body {
     transform: translate(-5px, -5px);
 }
 
-
-
-
 /* Button hide-topics */
 .button-hide-open-topics {
     font-family: 'Nunito', sans-serif;
@@ -403,30 +344,30 @@ body {
     width: 350px;
     padding: 0 50px;
     padding-top: 30px;
-    font-family: 'Nunito', sans-serif;
 }
 
 .topics_title {
     font-size: 50px;
     font-weight: 700;
     color: #E6DF44;
+    text-align: left;
+    transition: 0.8s;
+}
+.topics_title:hover{
+    color:#37b9ff;
 }
 
 .topics_nav {
-    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     padding-top: 15px;
     line-height: 1.5;
 }
 
 .topics_link {
-    display: inline-block;
-
     display: flex;
     justify-content: space-between;
 
     left: 300px;
-    margin: 0 15px;
     
     color: #f3993f;
     text-decoration: none;
@@ -435,7 +376,6 @@ body {
 
 .topics_link:hover {
     color: #f3ba3f;
-
 }
 
 .topics_link:hover:after {
