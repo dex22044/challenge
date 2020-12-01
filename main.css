@@ -16,7 +16,7 @@ body {
 .menu {
     top: 0;
     position: fixed;
-    background-color: #2b2c34;
+    background-color: #1c2d42a2;
     z-index: 5;
 
     height: 100%;
@@ -34,8 +34,8 @@ body {
 
     font-size: 50px;
     font-weight: 700;
-
-    color: #faab60;
+    
+    color: #5eb8bd;
     transition: 0.8s; 
 }
 
@@ -52,15 +52,15 @@ body {
     overflow: hidden;
     cursor: pointer;
 
-    padding-right: 50px;
-    padding-left: 45px;
+    padding-right: 60px;
+
 
     text-decoration: none;
     text-align: left;
     font-size: 32px;
     line-height: 1.5;
     border-radius: 50px;
-    color: #ea6119;
+    color: #dddddb;
     transition: color 0.2s linear;
 }
 
@@ -68,11 +68,14 @@ body {
     height: 32px; 
     width: 32px;
     margin-top: 8px;
-    margin-left: 8px;
+    margin-left: 30px;
 }
 
 .nav_link:hover {
     color: #37b9ff; 
+}
+.nav_link img:hover{
+    background-image: url(css/icon_menu/main2.png);
 }
 .nav_link:before,
 .nav_link:after {
@@ -119,14 +122,14 @@ body {
     font-size: 30px;
     border: none;
     
-    background: #170250;
+    background: #2d4262;
     color: white;
 
     transition: .2s linear;
 }
 
 .button-download:hover {
-    background: #1b0066;
+    background: #3e5c88;
 }
 
 .button-download:after {
@@ -144,8 +147,8 @@ body {
 }
 
 .button-download span{
-    padding-left: 35px;
-    padding-right: 10px; 
+    padding-left: 13px;
+
     letter-spacing: 1.5px;
 }
 
@@ -165,11 +168,10 @@ body {
 
 
 
-/* Content */
+/* Content  131c25*/
 .content {
     min-height: 1000px;
     width: 100%;
-
 
     background-color: #131c25;
     background-repeat: repeat-y;
@@ -212,7 +214,7 @@ body {
     display: block;
     position: relative;
     z-index: 3;
-    background: #170250;
+    background: #15212c;
     color: #fffbb0;
     padding: 0 30px;
     line-height: 40px;
@@ -225,7 +227,7 @@ body {
     height: calc(100% + 5px);
     left: -5px;
     top: -5px;
-    background: #ff4675;
+    background: #37b9ff;
     z-index: 1;
     transition: .4s ease-out;
 }
@@ -237,7 +239,7 @@ body {
     height: calc(100% + 5px);
     right: -5px;
     bottom: -5px;
-    background: #f0910f;
+    background: #0b5292;
     transition: .4s ease-out .1s;
 }
 
@@ -267,7 +269,7 @@ body {
     display: block;
     position: relative;
     z-index: 3;
-    background: #170250;
+    background: #15212c;
     color: #fffbb0;
     padding: 0 30px;
     line-height: 40px;
@@ -280,7 +282,7 @@ body {
     height: calc(100% + 5px);
     left: -5px;
     top: -5px;
-    background: #ff4675;
+    background: #37b9ff;
     z-index: 1;
     transition: .4s ease-out;
 }
@@ -292,7 +294,7 @@ body {
     height: calc(100% + 5px);
     right: -5px;
     bottom: -5px;
-    background: #f0910f;
+    background: #0b5292;
     transition: .4s ease-out .1s;
 }
 
@@ -315,7 +317,7 @@ body {
 /* Topics*/
 .topics {
     z-index: 5;
-    background-color: #2b2c34;
+    background-color: #1c2d42a2;
     height: 100%;
     position: fixed;
     top: 0;
@@ -328,7 +330,7 @@ body {
 .topics_title {
     font-size: 50px;
     font-weight: 700;
-    color: #E6DF44;
+    color: #5eb8bd;
     text-align: left;
     transition: 0.8s;
 }
@@ -348,13 +350,13 @@ body {
 
     left: 300px;
     
-    color: #ea6119;
+    color: #dddddb;
     text-decoration: none;
     transition: color 0.2s linear;
 }
 
 .topics_link:hover {
-    color: #f3ba3f;
+    color: #37b9ff;  
 }
 
 .topics_link:hover:after {

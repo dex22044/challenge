@@ -13,11 +13,11 @@ let isHideTopics = false;
 /* CONTENT */
 
 /* Change icon music */
-function music_off(image) {
-    if (document.getElementById("image").src.indexOf("css/audio_off.png")>0)
-            {document.getElementById("image").src="css/audio.png"}
+function sound_off(sound) {
+    if (document.getElementById("sound").src.indexOf("css/icon_content/sound_off.png")>0)
+            {document.getElementById("sound").src="css/icon_content/sound.png"}
         else
-            {document.getElementById("image").src="css/audio_off.png"}
+            {document.getElementById("sound").src="css/icon_content/sound_off.png"}
 }
 
 /* Open/Close relevant menu */
@@ -34,7 +34,7 @@ function closeOpenMenu() {
             right: '0px'
         }, 400);
 
-        top.innerHTML = "<";
+        top.innerHTML = ">";
     } else {
         isHideTopics = false;
         $('.menu').animate({
@@ -44,7 +44,7 @@ function closeOpenMenu() {
             right: '0px'
         }, 400);
 
-        top.innerHTML = ">";
+        top.innerHTML = "<";
     }
 };
 
