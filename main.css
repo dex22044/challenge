@@ -10,19 +10,17 @@
 /* Container = body */
 body {
     font-family: 'Nunito', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 /* Menu */
 .menu {
+    top: 0;
     position: fixed;
-    background-color: #063852;
+    background-color: #2b2c34;
     z-index: 5;
 
     height: 100%;
-    width: 350px;
+    width: 300px;
 }
 
 /* Logo menu */
@@ -37,7 +35,7 @@ body {
     font-size: 50px;
     font-weight: 700;
 
-    color: #E6DF44;
+    color: #faab60;
     transition: 0.8s; 
 }
 
@@ -62,7 +60,7 @@ body {
     font-size: 32px;
     line-height: 1.5;
     border-radius: 50px;
-    color: #ff8f1f;
+    color: #ea6119;
     transition: color 0.2s linear;
 }
 
@@ -169,48 +167,29 @@ body {
 
 /* Content */
 .content {
-    left: 400px;
-    padding-right: 800px;
-
-    height: 2500px;
+    min-height: 1000px;
     width: 100%;
-    flex: 0 0 auto;
 
-    background-color: #002336;
+
+    background-color: #131c25;
     background-repeat: repeat-y;
     background-position: center;
     background-image: url(css/img22.JPEG);
     background-size: 820px;
 }
 
-/*
-.backgrr {
-    position: fixed;
-
-    left: 400px;
-    padding-right: 800px;
-
-    background-color: black;
-    height: 2500px;
-    width: 100%;
-    flex: 0 0 auto;
-    padding: 0 50px;
-
-    opacity: 0.7;
-}
-*/
-
 /* Icon */
 .icon {
-    position: relative;
+    position: absolute;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
 
-    top: 0px;
-    left: 1065px;
+    top: 500px;
+    left:70%;
     margin-right: 30px;
 }
+
 .icon_hover {
     margin: 5px;
 }
@@ -336,12 +315,12 @@ body {
 /* Topics*/
 .topics {
     z-index: 5;
-    background-color: #063852;
+    background-color: #2b2c34;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    width: 350px;
+    width: 300px;
     padding: 0 50px;
     padding-top: 30px;
 }
@@ -369,7 +348,7 @@ body {
 
     left: 300px;
     
-    color: #f3993f;
+    color: #ea6119;
     text-decoration: none;
     transition: color 0.2s linear;
 }
@@ -389,19 +368,15 @@ body {
 
 
 * {box-sizing: border-box;}
-ul {
-    
+.bxslider {
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 .bx-wrapper {
-    transform: translate(-50%, 0px);
-    left: 50%; 
-
-    right: 100px;
-    width: 880px;
-    margin: 50px 0px 0px 500px ;
+    left: 25%;
+    width: 50%;
     position: relative;
 }
 .bx-wrapper img {
@@ -413,9 +388,7 @@ ul {
     text-decoration: none;
     position: absolute;
     cursor: pointer;
-    top: 2%;
-    right: 50%;
-    
+
     border-radius: none;
     border: 1px solid #ffefdd;
     color: #ffefdd;
@@ -434,8 +407,6 @@ ul {
     text-decoration: none;
     position: absolute;
     cursor: pointer;
-    bottom: 2%;
-    left: 50%;
   
     border-radius: none;
     border: 1px solid #ffefdd;

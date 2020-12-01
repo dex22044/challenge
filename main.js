@@ -20,21 +20,6 @@ function music_off(image) {
             {document.getElementById("image").src="css/audio_off.png"}
 }
 
-/* Bxslider */
-jQuery(document).ready(function bxslider(){
-        jQuery('.bxslider').bxSlider({
-            mode: 'vertical',
-            pager: false,
-            captions: true,
-            nextText: '',
-            prevText: '',
-            useCSS: false,
-            easing: 'jswing',
-            speed: 500,
-            slideMargin: 3,
-           });
-        });
-
 /* Open/Close relevant menu */
 function closeOpenMenu() {
     let top = document.querySelector('.arrow_menu');
@@ -42,7 +27,7 @@ function closeOpenMenu() {
     if(isHideTopics == false){
         isHideTopics = true;
         $('.menu').animate({
-            left: '-350px'
+            left: '-300px'
         }, 200);
 
         $('body').animate({
@@ -72,7 +57,7 @@ function closeOpenTopics() {
     if(isHideTopics == false){
         isHideTopics = true;
         $('.topics').animate({
-            right: '-350px'
+            right: '-300px'
         }, 200);
 
         $('body').animate({
