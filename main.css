@@ -52,8 +52,6 @@ body {
     overflow: hidden;
     cursor: pointer;
 
-    padding-right: 60px;
-
 
     text-decoration: none;
     text-align: left;
@@ -71,13 +69,29 @@ body {
     margin-left: 30px;
 }
 
+/*Одно из изображений прячем*/
+.nav_link .hover_img {
+    display: none;
+}
+/*При наведении показываем выделенное изображение*/
+.nav_link:hover .hover_img{
+    display: inline;
+}
+/*При наведении старое изображение прячем*/
+.nav_link:hover .hide_img{
+    display: none;
+}
+
+.nav_link div {
+    margin-left: 10px;
+    flex-grow: 1;
+    text-align: left;
+}
+
 .nav_link:hover {
     color: #37b9ff; 
-    img
 }
-.nav_link img:hover{
-    background-image: url(css/icon_menu/main2.png);
-}
+
 .nav_link:before,
 .nav_link:after {
 	content: "";
@@ -329,7 +343,7 @@ body {
 }
 
 .topics_title {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     color: #5eb8bd;
     text-align: left;
@@ -340,7 +354,7 @@ body {
 }
 
 .topics_nav {
-    font-size: 32px;
+    font-size: 16px;
     padding-top: 15px;
     line-height: 1.5;
 }
