@@ -15,7 +15,7 @@
     <script src="main.js"></script>
 
     <title>
-        Главная
+        Главная/Challenge
     </title>
 
 </head>
@@ -36,12 +36,17 @@
         <a class="nav_link" href="#profile"><img class="hover_img" src="css/icon_menu/profile2.png"><img class="hide_img" src="css/icon_menu/profile.png"><div>Профиль</div></a>
         <a class="nav_link" href="#customization"><img class="hover_img" src="css/icon_menu/customization2.png"><img class="hide_img" src="css/icon_menu/customization.png"><div>Настройки</div></a>
     </nav>
-    <button type="submit" class="button-download"><img src="css/icon_menu/download.png"> <span>Загрузить</span> </button>
+
+    <button type="submit" class="button-download"><img class="hide_img_download" src="css/icon_menu/download.png"><img class="hover_img_download" src="css/icon_menu/download2.png"> <span>Загрузить</span> </button>
 
 </div>
 
 <div class="content">
     <button class="button-open-hide-menu" onclick="closeOpenMenu();"><span class="arrow_menu"><</span></button> 
+    <div class="advertising"> <p class="advertising_text"> Здесь могла бы быть ваша реклама :) <br/>
+        по вопросам пишите tg: @zvendra </p>
+    </div>
+
 
     <script>jQuery(document).ready(function(){
         jQuery('.bxslider').bxSlider({
@@ -118,27 +123,44 @@
         <img class="icon_hover" id="sound" onclick="sound_off()" src="css/icon_content/sound.png" > <br>
         <img class="icon_hover" src="css/icon_content/more.png" > <br>
     </div>
+
+    <div class="description">
+        <nav class="description_nav"> 
+            <div class="description_text">От
+            <p class="description_text_example" href="">zvendra</p> 
+            </div>
+
+            <div class="description_text">Кому
+                <p class="description_text_example" href="">dex</p> 
+            </div>
+
+            <div class="description_text">Описание
+                <p class="description_text_example" href="">Hey!</p> 
+            </div>
+        </nav>
+    </div>
+
     <button class="button-hide-open-topics" onclick="closeOpenTopics();"><span class="arrow_topics">></span></button>
 </div>
 
 <div class="topics">
     <h2  onclick="click_topics" class="topics_title">Актуальные темы</h2>
         <nav class="topics_nav"> 
-            <a class="topics_link" href="#topics_link">Здесь</a>
-            <a class="topics_link" href="#topics_link">Будут</a>
-            <a class="topics_link" href="#topics_link">Расположены</a>
-            <a class="topics_link" href="#topics_link">Актуальные</a>
-            <a class="topics_link" href="#topics_link">Темы</a>
-            <a class="topics_link" href="#topics_link">Челленджей</a>
+            <a class="topics_link" href="#">Здесь</a>
+            <a class="topics_link" href="#">Будут</a>
+            <a class="topics_link" href="#">Расположены</a>
+            <a class="topics_link" href="#">Актуальные</a>
+            <a class="topics_link" href="#">Темы</a>
+            <a class="topics_link" href="#">Челленджей</a>
         </nav>
 
         <nav class="buzzword"> 
-            <a class="buzzword_link" href="#buzzword_link">Условия предоставления услуг</a>
-            <a class="buzzword_link" href="#buzzword_link">Политика конфиденциальности</a>
-            <a class="buzzword_link" href="#buzzword_link">Политика в отношении файлов cookie</a>
-            <a class="buzzword_link" href="#buzzword_link">Информация о рекламе</a>
-            <a class="buzzword_link" href="#buzzword_link">Ещё</a>
-            <a class="buzzword_link" href="#buzzword_link">© Challenge, Inc., 2020.</a>
+            <a class="buzzword_link" href="#">Условия предоставления услуг</a>
+            <a class="buzzword_link" href="#">Политика конфиденциальности</a>
+            <a class="buzzword_link" href="#">Политика в отношении файлов cookie</a>
+            <a class="buzzword_link" href="#">Информация о рекламе</a>
+            <a class="buzzword_link" href="#">Ещё</a>
+            <a class="buzzword_link" href="#">© Challenge, Inc., 2020.</a>
         </nav>
 </div>
 
@@ -146,27 +168,40 @@
     <a href="" class="popup_area"></a>
     <div class="popup_body">
         <div class="popup_content">
-            <a href="#main" class= "popup_close">X</a>
-            <div class="popup_title">Присоединяйся к Challenge прямо сейчас!</div>
-            <div class="popup_text">Блалалала</div>
+            <a href="#main" class= "popup_close"><img class="cancel_hide" src="css/icon_popup/cancel.png"> <img class="cancel_hover" src="css/icon_popup/cancel2.png"></a>
+
+            <div class="popup_title">
+                <p>Присоединяйся к Challenge</p>
+                <p>прямо сейчас!</p>
+            </div>
 
             <form action="" class="form_login">
+
                 <div class="line">
                     <label for="login">Логин</label>
-                    <input id="login" class="enter" type="text" class="input_box" />
+                    <input id="login" class="enter" type="text" class="input_box"/>
                 </div>
 
                 <div class="line">
                     <label for="password">Пароль</label>
-                    <input id="password" class="enter" type="password" class="input_box" />
+                    <input id="password" class="enter" type="password" class="input_box"/>
                 </div>
+
+                <input type="checkbox" id="custom-checkbox">
+                <label for="custom-checkbox">Запомнить меня</label>
+                
                 <div class="line">
-                    <input type="submit" class="button_enter" value="Войти" />
+                    <button type="submit" class="button_enter"> <span class="arrow_topics">Войти</span></button>
+                    <button type="submit" class="button_enter"> <span class="arrow_topics">Зарегистрироваться</span></button>
+
                 </div>
+            
             </form>
         </div>
     </div>
 </div>
+
+
 
 </body>
 </html>
