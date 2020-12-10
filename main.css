@@ -25,7 +25,7 @@ body {
 
 /* Logo menu */
 
-.menu .logo {
+.logo {
     height: 64px; 
     width: 64px;
     margin: 20px 0px 20px 30px;
@@ -126,7 +126,9 @@ body {
     height: 55px; 
     
     font-size: 30px;
-    border: none;
+    border-radius: 30px;
+    border: 0;
+
     
     background: #2d4262;
     color: #dddddb;
