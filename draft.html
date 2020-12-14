@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+
+
 <link rel="stylesheet" type="text/css" href="draft.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
 
@@ -17,6 +19,39 @@
 
     <button class="button_1"><span>Загрузить</span> </button>
 
+    <div class="tab">
+        <input id="tab-one" type="checkbox" name="tabs">
+        <label for="tab-one">Label One</label>
+        <div class="tab-content">
+          <a>Женский</br></a> 
+          <a>Женский</br></a> 
+          <a>Женский</a> 
+        </div>
+      </div>
+    </div>
 
+    <button  data-toggle-id="su">
+        Показать
+      </button>
+      
+      <form id="su" hidden>
+      скрыть
+      </form>
+      
+         
+        <script> 
+      document.onclick = function(event) { var target = event.target;  var id = target.getAttribute('data-toggle-id');
+      if (!id) return;
+      var elem = document.getElementById(id);
+      elem.hidden = !elem.hidden;
+        };
+       </script>
+
+
+
+    <details>
+        <summary class='btn'>Узнать подробнее...</summary>
+        <div class="content_wrapper">Представьте, у меня есть кнопка</div>
+    </details>
 </body>
 </html>

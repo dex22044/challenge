@@ -14,13 +14,12 @@ body {
 
 /* Menu */
 .menu {
-    top: 0;
     position: fixed;
     background-color: #192737;
-    z-index: 5;
-
+    top: 0;
     height: 100%;
     width: 300px;
+    z-index: 5;
 }
 
 /* Logo menu */
