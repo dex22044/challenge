@@ -23,7 +23,6 @@
 
 <body>
 <div class="menu">
-    <div class="line_menu">
 
     <a href="main.html"><img class="logo" src="css/logo.png"></a>
     
@@ -48,18 +47,23 @@
     </nav>
 
     <button type="submit" class="button-download"><img class="hide_img_download" src="css/icon_menu/download.png"><img class="hover_img_download" src="css/icon_menu/download2.png"> <span>Загрузить</span> </button>
-    </div>
+</div>
+
+<button class="button-open-hide-menu" onclick="closeOpenMenu();"><span class="arrow_menu"><</span></button> 
+<div class="advertising"> <p class="advertising_text"> Здесь могла бы быть ваша реклама :) <br/>
+    по вопросам пишите<br/>
+    tg: @zvendra </p>
+    <img class="qr" src="css/icon_content/Qr_frontend.gif" > <br>
+</div>
+
+<button class="button-hide-open-topics" onclick="closeOpenTopics();"><span class="arrow_topics">></span></button>
+<div class="advertising_topics"> <p class="advertising_topics_text"> Здесь могла бы быть ваша реклама :) <br/>
+    по вопросам пишите<br/>
+    tg: @dex22044 </p>
+    <img class="qr" src="css/icon_content/QR_beckend.jpg" > <br>
 </div>
 
 <div class="content">
-    <button class="button-open-hide-menu" onclick="closeOpenMenu();"><span class="arrow_menu"><</span></button> 
-    <div class="advertising"> <p class="advertising_text"> Здесь могла бы быть ваша реклама :) <br/>
-        по вопросам пишите<br/>
-        tg: @zvendra </p>
-        <img class="qr" src="css/icon_content/Qr_frontend.gif" > <br>
-    </div>
-
-
     <script>jQuery(document).ready(function(){
         jQuery('.bxslider').bxSlider({
             /* General setting */
@@ -153,14 +157,6 @@
                 <p class="description_text_example">Hey!</p> 
             </div>
         </nav>
-    </div>
-
-    <button class="button-hide-open-topics" onclick="closeOpenTopics();"><span class="arrow_topics">></span></button>
-
-    <div class="advertising_topics"> <p class="advertising_topics_text"> Здесь могла бы быть ваша реклама :) <br/>
-        по вопросам пишите<br/>
-        tg: @dex22044 </p>
-        <img class="qr" src="css/icon_content/QR_beckend.jpg" > <br>
     </div>
 </div>
 

@@ -20,13 +20,7 @@ body {
     height: 100%;
     width: 300px;
     z-index: 5;
-}
-
-.line_menu{
-    position: relative;
-        height: 100%;
-        border-left: 1px solid #dddddb;
-        left: 300px;
+    border-right: 1px solid #dddddb;
 }
 
 /* Logo menu */
@@ -199,8 +193,10 @@ body {
 
 /* Content */
 .content {
+    margin-left:300px;
+    margin-right:300px;
+    width: auto;
     min-height: 1000px;
-    width: 100%;
     height: 100%;
     background-color: #131c25;
     background-repeat: repeat-y;
@@ -436,6 +432,7 @@ body {
     right: 0;
     width: 300px;
     padding: 30px 10px;
+    border-left: 1px solid #dddddb;
 }
 
 .form_topics {
@@ -633,7 +630,7 @@ body {
     color: #37b9ff;
     opacity: 0;
 
-    z-index: 10;
+    z-index: 999;
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;

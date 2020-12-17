@@ -1,23 +1,31 @@
 .rivals{
     position: relative;
-
-    left: 300px;
+    padding-top: 200px;
     height: 100%;
-    width: 800px;
+    width: 100%;
     background: #192737;
 
-    z-index: 5;
+    z-index: 0;
+}
+
+.cap_rivals{
+    position: fixed;
+    left: 25%;
+    height: 180px;
+    background-color:#131c25;
+    width: 50%;
+    z-index: 2;
 }
 
 .rivals_title {
-    top: 5%;
-
-    height: 10%;
+    background: #131c25;
 
     color: #37b9ff; 
     font-size: 30px;
     text-align: center;
-    line-height: 50px;
+    line-height: 70px;
+
+    z-index: 2;
 }
 
 .rivals_content {
@@ -33,10 +41,10 @@
 }
    
 .sort_rivals {
+    position: relative;
     display: flex;
     text-align: center;
     align-items: center;
-    position: relative;
     cursor: pointer;
 
     padding: 30px 10px;
@@ -75,7 +83,7 @@
 
 .line_rivals {
     z-index: -1;
-    width: 884px;
+    width: 100%;
     border-top: 1px solid #dddddb;
     right: -50px;
     margin-right: -150px;
