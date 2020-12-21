@@ -6,6 +6,7 @@
     <script src="main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="rivals.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
 
@@ -16,7 +17,7 @@
     <script src="bxslider/jquery.fitvids.js"></script>
 
     <title>
-        Главная/Challenge
+        Профиль/Challenge
     </title>
 
 </head>
@@ -26,11 +27,10 @@
 
     <a href="main.html"><img class="logo" src="css/logo.png"></a>
     
-      <nav class="nav">
         <a class="nav_link" href="main.html">
             <img class="hover_img" src="css/icon_menu/main2.png">
-            <img class="hide_img" src="css/icon_menu/main2.png">
-            <div style="color: #37b9ff;">Главная</div></a>
+            <img class="hide_img" src="css/icon_menu/main.png">
+            <div>Главная</div></a>
 
         <a class="nav_link" href="rivals.html">
             <img class="hover_img" src="css/icon_menu/rivals2.png">
@@ -42,7 +42,13 @@
         <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/notifications2.png"><img class="hide_img" src="css/icon_menu/notifications.png"><div>Уведомления</div></a>
         <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/messanges2.png"><img class="hide_img" src="css/icon_menu/messanges.png"><div>Сообщения</div></a>
         <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/save2.png"><img class="hide_img" src="css/icon_menu/save.png"><div>Сохранённое</div></a>
-        <a class="nav_link" href="#profile"><img class="hover_img" src="css/icon_menu/profile2.png"><img class="hide_img" src="css/icon_menu/profile.png"><div>Профиль</div></a>
+
+        <a class="nav_link" href="#profile.html">
+            <img class="hover_img" src="css/icon_menu/profile2.png">
+            <img class="hide_img" src="css/icon_menu/profile2.png">
+            <div style="color: #37b9ff;">Профиль</div>
+        </a>
+
         <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/customization2.png"><img class="hide_img" src="css/icon_menu/customization.png"><div>Настройки</div></a>
     </nav>
 
@@ -70,99 +76,17 @@
 
     
 <div class="content">
-    <script>jQuery(document).ready(function(){
-        jQuery('.bxslider').bxSlider({
-            /* General setting */
-            mode: 'vertical',
-            speed: 500,
-            slideMargin: 0,
-            easing: 'jswing',
-            captions: true,
-            video: true,
-            useCSS: false,
-            adaptiveHeight: true,
-            adaptiveHeight: 500,
-            preloadImages: 'all',
 
-            /* Slider */
-            pager: false,
-            pagerType: 'full',
-        
-            /* For touch screen */
-            touchEnabled: true,
-            oneToOneTouch: true,
-            preventDefaultSwipeY: false,
-            swipeThreshold: 50,
-            
-            /* Control element */
-            controls: false,
-            nextText: '',
-            nextSelector: null,
-            prevText: '',
-            prevSelector: null,
-            autoControls: false,
+    <div class="profile">
+        <img class="avatar" src="css/icon_content/avatar.JPG">
 
-            /* Automatic slide show yeeeep */
-            auto: true,
-            pause: 2000,
-            autoStart: true,
-            autoDirection: 'next',
-            autoHover: false,
-            autoDelay: 200,
-
-            /* Carousel, hmmm */
-            minSlides: 1,
-            maxSlides: 1,
-            moveSlides: 0,
-            slideWidth: 0,
-            
-            
-           });
-        });</script>
-
-     <ul class="bxslider" ready="bxslider();">
-        <li><img src="css/bxslider/snow1.JPG"></li>
-        <li><img src="css/bxslider/snow2.JPG"></li>
-        <li><img src="css/bxslider/snow3.JPG"></li>
-        <li><img src="css/bxslider/snow4.JPG"></li>
-
-        <li><img src="css/bxslider/moscow1.JPG"></li>
-        <li><img src="css/bxslider/moscow2.JPG"></li>
-        <li><img src="css/bxslider/moscow3.JPG"></li>
-        <li><img src="css/bxslider/moscow4.JPG"></li>
-        <li><img src="css/bxslider/moscow5.JPG"></li>
-        <li><img src="css/bxslider/moscow6.JPG"></li>
-        <li><img src="css/bxslider/moscow7.JPG"></li>
-
-        <li><img src="css/bxslider/graffiti1.JPG"></li>
-        <li><img src="css/bxslider/graffiti2.JPG"></li>
-        <li><img src="css/bxslider/graffiti3.JPG"></li>
-     </ul> 
-
-     <div class="icon">
-        <img class="icon_hover" src="css/icon_content/like.png" > <br> 
-        <img class="icon_hover" src="css/icon_content/comments.png" > <br>
-        <img class="icon_hover" id="sound" onclick="sound_off()" src="css/icon_content/sound.png" > <br>
-        <img class="icon_hover" src="css/icon_content/more.png" > <br>
-    </div>
-
-    <div class="description">
-        <nav class="description_nav"> 
-            <div class="description_text">
-                <p class="description_text_example">От</p>
-                <p class="description_text_example">zvendra</p> 
-            </div>
-
-            <div class="description_text">
-                <p class="description_text_example">Кому</p>
-                <p class="description_text_example">dex</p> 
-            </div>
-
-            <div class="description_text">
-                <p class="description_text_example">Описание</p>
-                <p class="description_text_example">Hey!</p> 
-            </div>
-        </nav>
+        <div class="info">
+            <p class="name">Зверева Александра</p>
+            <p class="nickname">@zvendra</p>
+            <p class="description_info">Туруру, хочу спать</p>
+            <a class="quantity_rivals">5 соперников</a>
+            <a class="quantity_challenge">1 вызов</a>
+         </div>
     </div>
 </div>
 
@@ -219,7 +143,7 @@
                 <label for="custom-checkbox">Запомнить меня</label>
                 
                 <div class="line">
-                    <button type="submit" href="profile.html" class="button_enter"> <span  href="profile.html" class="arrow_topics">Войти</span></button>
+                    <button type="submit" class="button_enter"> <span class="arrow_topics">Войти</span></button>
                     <button type="submit" class="button_enter"> <span class="arrow_topics">Зарегистрироваться</span></button>
 
                 </div>

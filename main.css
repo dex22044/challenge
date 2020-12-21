@@ -376,7 +376,6 @@ body {
     z-index: 10;
 
     margin-top: 5px;
-    margin-left: 31%;
 
     width: 30%;
     height: 15%;
@@ -424,10 +423,10 @@ body {
 
 /* Topics*/
 .topics {
+    position: fixed;
     z-index: 5;
     background-color: #192737;
     height: 100%;
-    position: fixed;
     top: 0;
     right: 0;
     width: 300px;
@@ -507,11 +506,10 @@ body {
 
 /* Buzzword */
 .buzzword {
-    position: fixed;
+    position: relative;
     padding: 30px;
     font-size: 14px;
     line-height: 1.5;
-    bottom: 0px;
 }
 
 .buzzword_link {
@@ -619,16 +617,16 @@ body {
 /* Popup autorization*/
 .popup {
     position: fixed;
-    height: 78%;
-    width: 50%;
-    left: 25%;
-    top: 10%;
+    height: 100%;
+    width: 100%;
 
+    top: 10%;
 
     background-color: #0b141fd5;
     background-position: center;
     color: #37b9ff;
     opacity: 0;
+
 
     z-index: 999;
     visibility: hidden;
@@ -706,6 +704,7 @@ body {
 }
 
 .popup_title {
+    text-align: center;
     font-size: 40px;
     margin: 20px 20px;
 }
@@ -752,6 +751,7 @@ body {
 }
 
 .button_enter {
+    position: relative;
     cursor: pointer;
     font-size: large;
     background-color: #1c2d42a2;;
@@ -760,10 +760,11 @@ body {
     display: inline-block;
     margin: 10px 20px;
     padding: 10px 30px;
-    position: relative;
     border: 2px solid #dddddb;
     color: #dddddb;
     transition: .4s;
+    text-align: center;
+
 }
 
   .button_enter:after {
