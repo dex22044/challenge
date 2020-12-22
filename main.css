@@ -197,7 +197,7 @@ body {
     margin-right:300px;
     width: auto;
     min-height: 1000px;
-    height: 100%;
+
     background-color: #131c25;
     background-repeat: repeat-y;
     background-position: center;
@@ -372,13 +372,9 @@ body {
 /* Description */
 
 .description {
-    position: absolute;
-    z-index: 10;
-
-    margin-top: 5px;
-
-    width: 30%;
-    height: 15%;
+    margin: 0 25%;
+    width: auto;
+    min-height: 100px;
     background: #1c2d42a2;
 }
 
@@ -542,8 +538,9 @@ body {
 }
 
 .bx-wrapper {
-    left: 31%;
-    width: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
     position: relative;
 }
 

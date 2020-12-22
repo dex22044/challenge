@@ -1,7 +1,7 @@
 .profile {
     position: relative;
     width: 100%;
-    background-color: rebeccapurple;
+    /*background-color: rebeccapurple;*/
 }
 
 .avatar {
@@ -9,10 +9,10 @@
     width: 200px;
     height: 200px;
     border-radius: 70%;
-
 }
 
 .info {
+    position: absolute;
     display: inline-block;
     justify-content: space-between;
     overflow: hidden;
@@ -20,6 +20,7 @@
     text-decoration: none;
     text-align: left;
     font-size: 29px;
+    top: 50px;
     line-height: 1.5;
     color: #dddddb;
 }
@@ -38,7 +39,67 @@
     font-weight: 500;
 }
 
-.quantity_rivals .quantity_challenge{
+.quantity_rivals, .quantity_challenge{
     font-size: 15px;
     cursor: pointer;
+}
+
+
+/* Button change profile */
+
+.button_change_profile {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    padding: 12px 20px;
+    margin: 30px 30px 30px 30px;
+
+    width: 80%;
+    height: 55px; 
+    
+    font-size: 30px;
+    border-radius: 30px;
+
+    border-color: #dddddb;
+    
+    background: none;
+    color: #dddddb;
+
+    transition: .2s linear;
+}
+
+.button_change_profile:hover {
+    background: #3e5c88;
+    color: #37b9ff; 
+    transition: 0.8s; 
+}
+
+.button_change_profile:after {
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 1px solid;
+}
+
+.button_change_profile span{
+    padding-left: 13px;
+    letter-spacing: 1.5px;
+}
+
+.button_change_profile img {
+    height: 45px; 
+    width: 45px;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
 }
