@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="rivals.css">
+    <link rel="stylesheet" type="text/css" href="settings_profile.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
+
+    <link href="bxslider/jquery.bxslider.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="bxslider/jquery.bxslider.min.js"></script>
+    <script src="bxslider/jquery.easing.1.3.js"></script>
+    <script src="bxslider/jquery.fitvids.js"></script>
+
+    <title>
+        Настройки профиля/Challenge
+    </title>
+
+</head>
+
+<body>
+<div class="menu">
+
+    <a href="main.html"><img class="logo" src="css/logo.png"></a>
+    
+        <a class="nav_link" href="main.html">
+            <img class="hover_img" src="css/icon_menu/main2.png">
+            <img class="hide_img" src="css/icon_menu/main.png">
+            <div>Главная</div></a>
+
+        <a class="nav_link" href="rivals.html">
+            <img class="hover_img" src="css/icon_menu/rivals2.png">
+            <img class="hide_img" src="css/icon_menu/rivals3.png">
+            <div>Соперники</div>
+        </a>
+
+        <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/search2.png"><img class="hide_img" src="css/icon_menu/search.png"><div>Поиск</div></a>
+        <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/notifications2.png"><img class="hide_img" src="css/icon_menu/notifications.png"><div>Уведомления</div></a>
+        <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/messanges2.png"><img class="hide_img" src="css/icon_menu/messanges.png"><div>Сообщения</div></a>
+        <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/save2.png"><img class="hide_img" src="css/icon_menu/save.png"><div>Сохранённое</div></a>
+
+        <a class="nav_link" href="#profile.html">
+            <img class="hover_img" src="css/icon_menu/profile2.png">
+            <img class="hide_img" src="css/icon_menu/profile2.png">
+            <div style="color: #37b9ff;">Профиль</div>
+        </a>
+
+        <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/customization2.png"><img class="hide_img" src="css/icon_menu/customization.png"><div>Настройки</div></a>
+    </nav>
+
+    <button type="submit" class="button-download"><img class="hide_img_download" src="css/icon_menu/download.png"><img class="hover_img_download" src="css/icon_menu/download2.png"> <span>Загрузить</span> </button>
+</div>
+
+
+
+    <!--start of advertising-->
+<button class="button-open-hide-menu" onclick="closeOpenMenu();"><span class="arrow_menu"><</span></button> 
+<div class="advertising"> <p class="advertising_text"> Здесь могла бы быть ваша реклама :) <br/>
+    по вопросам пишите<br/>
+    tg: @zvendra </p>
+    <img class="qr" src="css/icon_content/Qr_frontend.gif" > <br>
+</div>
+
+<button class="button-hide-open-topics" onclick="closeOpenTopics();"><span class="arrow_topics">></span></button>
+<div class="advertising_topics"> <p class="advertising_topics_text"> Здесь могла бы быть ваша реклама :) <br/>
+    по вопросам пишите<br/>
+    tg: @dex22044 </p>
+    <img class="qr" src="css/icon_content/QR_beckend.jpg" > <br>
+</div>
+    <!--end of advertising-->
+
+
+    
+<div class="content">
+
+    <div class="profile">
+        <h3 class="rivals_title">Настройки профиля / @zvendra</h3>
+
+        <img class="avatar" src="css/icon_content/avatar.JPG">
+
+
+        <div class="info">
+            <p class="name">Зверева Александра</p>
+            <p class="nickname">Изменить ник (@zvendra)</p>
+
+            <div class="line"> 
+                <input id="login" class="enter" type="text" class="input_box"/>
+            </div>
+
+            <button type="submit" class="button_avatar"> <span>Выберите фото</span> </button>
+         </div>
+         <button class="confirm_changes">Подтвержить изменения</button>
+
+    </div>
+
+</div>
+
+<div class="topics">
+
+        <form class="form_topics">
+            <div class="div_topics">
+                <h3 class="topics_title">Актуальные темы</h3>
+  
+                <div class="topics_link">#ReadingChallenge</div>
+                <div class="topics_link">#Meditation</div>
+                <div class="topics_link">#WalkEveryDay</div>
+                <div class="topics_link">#Сharging</div>
+                <div class="topics_link">#DrinkWater</div>
+  
+                <button class="all_topics" >Показать ещё</button>
+              </div>
+          </form>
+          
+        <div class="buzzword"> 
+            <a class="buzzword_link" href="#">Условия предоставления услуг</a>
+            <a class="buzzword_link" href="#">Политика конфиденциальности</a>
+            <a class="buzzword_link" href="#">Политика в отношении файлов cookie</a>
+            <a class="buzzword_link" href="#">Информация о рекламе</a>
+            <a class="buzzword_link" href="#">Ещё</a>
+            <a class="buzzword_link" href="#">© Challenge, Inc., 2020.</a>
+        </div>
+</div>
+
+<div id="profile" class="popup">
+    <a href="" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#main" class= "popup_close"><img class="cancel_hide" src="css/icon_popup/cancel.png"> <img class="cancel_hover" src="css/icon_popup/cancel2.png"></a>
+
+            <div class="popup_title">
+                <p>Присоединяйся к Challenge</p>
+                <p>прямо сейчас!</p>
+            </div>
+
+            <form action="" class="form_login">
+
+                <div class="line">
+                    <label for="login">Логин</label>
+                    <input id="login" class="enter" type="text" class="input_box"/>
+                </div>
+
+                <div class="line">
+                    <label for="password">Пароль</label>
+                    <input id="password" class="enter" type="password" class="input_box"/>
+                </div>
+
+                <input type="checkbox" id="custom-checkbox">
+                <label for="custom-checkbox">Запомнить меня</label>
+                
+                <div class="line">
+                    <button type="submit" class="button_enter"> <span class="arrow_topics">Войти</span></button>
+                    <button type="submit" class="button_enter"> <span class="arrow_topics">Зарегистрироваться</span></button>
+
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+<!--  -->

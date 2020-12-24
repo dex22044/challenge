@@ -1,0 +1,133 @@
+.profile {
+    position: relative;
+    width: 100%;
+}
+
+.avatar {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+}
+
+.info {
+    position: absolute;
+    display: inline-block;
+    justify-content: space-between;
+    overflow: hidden;
+
+    text-decoration: none;
+    text-align: left;
+    font-size: 29px;
+    margin-left: 20px;
+    margin-top: 150px;
+    line-height: 1.5;
+    color: #dddddb;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.nickname {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.description_info {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.quantity_rivals, .quantity_challenge{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.button_avatar {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    padding: 12px 20px;
+    margin: 30px 30px 30px 30px;
+
+    width: 190px;
+    height: 55px; 
+    
+    font-size: 20px;
+    border-radius: 30px;
+    border: 0;
+
+    
+    background: #2d4262;
+    color: #dddddb;
+
+    transition: .2s linear;
+}
+
+.button_avatar:hover {
+    background: #3e5c88;
+    color: #37b9ff; 
+    transition: 0.8s; 
+}
+
+.button_avatar:after {
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 1px solid;
+}
+
+
+
+
+
+
+
+.confirm_changes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    padding: 0px 20px;
+    margin-left: 20px;
+
+    width: 240px;
+    height: 45px; 
+
+    font-size: 20px;
+    letter-spacing: 1.2px;
+
+    background-color: #253752;
+
+    border-radius: 30px;
+    border: 0;
+    color: #dddddb;
+
+    box-shadow: 0 5px 0px #3e5c88;
+    transition: all 0.5s ease 0s;
+}
+
+.confirm_changes:hover {
+    padding: 0px 45px;
+    box-shadow: 0 5px 0px #253752;
+    background-color: #3e5c88;
+}
