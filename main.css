@@ -118,6 +118,7 @@ body {
     position: relative;
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
 
     padding: 12px 20px;
     margin: 30px 30px 30px 30px;
@@ -270,6 +271,7 @@ body {
     font-size: 30px;
     transition: .3s;
     z-index: 999;
+    
 }
 
 .button-open-hide-menu span {
@@ -617,7 +619,8 @@ body {
     height: 100%;
     width: 100%;
 
-    top: 10%;
+    top: 0;
+    left: 0;
 
     background-color: #0b141fd5;
     background-position: center;
@@ -645,9 +648,8 @@ body {
 
 .popup_area {
     position: absolute;
-    width: 70%;
-    height: 70%;
-    top: 0;
+    width: 100%;
+    height: 100%;
     left: 0;
 }
 
@@ -655,7 +657,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 80px 10px;
     transition: all 0.8s ease 0s;
 }
 
@@ -725,6 +727,9 @@ body {
     width: 100%;
     margin-top: 10px;
     float: left;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .line label {
@@ -791,7 +796,151 @@ body {
 
 
 
+/* Popup autorization*/
+.popup_registration {
+    position: fixed;
+    height: 100%;
+    width: 100%;
 
+    top: 0;
+    left: 0;
+
+    background-color: #0b141fd5;
+    background-position: center;
+    color: #37b9ff;
+    opacity: 0;
+
+
+    z-index: 999;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup_registration:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*transform: perspective(600px) translate(0px, 0%), rotateX(0deg);*/
+.popup_registration:target .popup_content_registration {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.popup_area_registration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.popup_body_registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10px;
+    transition: all 0.8s ease 0s;
+}
+
+/*transform: perspective(600px) translate(0px,-100%), rotateX(45deg);*/
+.popup_content_registration {
+    position: relative;
+    padding: 30px;
+    background-color: #131c25;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+.popup_close_registration {
+    position: absolute;
+    right: 30px;
+    top: 10px;;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+    color: #dddddb;
+}
+
+.popup_close_registration img {
+    height: 28px; 
+    width: 28px;
+    margin-top: 8px;
+}
+
+/* Одно из изображений прячем */
+.popup_content_registration .cancel_hide_registration {
+    display: none;
+}
+
+/* При наведении показываем выделенное изображение */
+.popup_content_registration:hover .cancel_hide_registration {
+    display: inline;
+}
+
+/* При наведении старое изображение прячем */
+.popup_content_registration:hover .cancel_hide_registration {
+    display: none;
+}
+
+.popup_title_registration {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 20px;
+}
+
+.or_registration {
+    font-size: 25px;
+    color: #dddddb;
+}
+
+.popup.open_registration {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+
+.button_registration {
+    position: relative;
+    cursor: pointer;
+    font-size: large;
+    background-color: #1c2d42a2;;
+    text-decoration: none;
+    outline: none;
+    margin: 0px 20px;
+    padding: 10px 30px;
+    left: 20%;
+    border: 2px solid #dddddb;
+    color: #dddddb;
+    transition: .4s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+  .button_registration:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: .4s;
+}
+
+.button_registration:hover:after {
+    border-color: #dddddb;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+
+/* Popup autorization end */
 
 
 

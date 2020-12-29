@@ -11,7 +11,7 @@
     border-radius: 70%;
 }
 
-.info {
+.info_profile {
     position: absolute;
     display: inline-block;
     justify-content: space-between;
@@ -19,30 +19,39 @@
 
     text-decoration: none;
     text-align: left;
-    font-size: 29px;
+ 
     top: 50px;
     line-height: 1.5;
     color: #dddddb;
 }
 
-.name {
+.name_profile {
     font-weight: bold;
+    color: #37b9ff;
+    font-size: 29px;
+
 }
 
-.nickname {
+.nickname_profile {
     font-size: 20px;
     font-weight: 100;
 }
 
 .description_info {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 .quantity_rivals, .quantity_challenge{
     font-size: 15px;
     cursor: pointer;
+    flex-direction: column;
 }
+
+.quantity_rivals:hover, .quantity_challenge:hover{
+    border-bottom: 1px solid #37b9ff;
+}
+
 
 
 /* Button change profile */
@@ -57,24 +66,24 @@
     padding: 12px 20px;
     margin: 30px 30px 30px 30px;
 
-    width: 80%;
-    height: 55px; 
+    width: 260px;
+    height: 50px; 
     
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 30px;
 
     border-color: #dddddb;
     
     background: none;
     color: #dddddb;
+    text-align: center;
+    align-items: center;
 
     transition: .2s linear;
 }
 
 .button_change_profile:hover {
-    background: #3e5c88;
-    color: #37b9ff; 
-    transition: 0.8s; 
+    background: #253752;
 }
 
 .button_change_profile:after {
