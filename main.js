@@ -91,3 +91,8 @@ function closeOpenTopics() {
 
 
 /* END TOPICS */
+
+
+jQuery(function Color_rivals(){
+    $('.rivals, .line_rivals, .rivals_content:odd').css({'color':'#37b9ff'});
+});
