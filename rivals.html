@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <script src="main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="main.css">
     
@@ -16,6 +15,7 @@
     <script src="bxslider/jquery.bxslider.min.js"></script>
     <script src="bxslider/jquery.easing.1.3.js"></script>
     <script src="bxslider/jquery.fitvids.js"></script>
+    <script src="main.js"></script>
 
     <title>
         Соперники/Challenge
@@ -44,10 +44,18 @@
             <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/messanges2.png"><img class="hide_img" src="css/icon_menu/messanges.png"><div>Сообщения</div></a>
             <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/save2.png"><img class="hide_img" src="css/icon_menu/save.png"><div>Сохранённое</div></a>
             <a class="nav_link" href="#profile"><img class="hover_img" src="css/icon_menu/profile2.png"><img class="hide_img" src="css/icon_menu/profile.png"><div>Профиль</div></a>
-            <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/customization2.png"><img class="hide_img" src="css/icon_menu/customization.png"><div>Настройки</div></a>
+            <a class="nav_link" href="settings_profile.html">
+                <img class="hover_img" src="css/icon_menu/customization2.png">
+                <img class="hide_img" src="css/icon_menu/customization.png">
+                <div>Настройки</div>
+            </a>
         </nav>
     
-        <button type="submit" class="button-download"><img class="hide_img_download" src="css/icon_menu/download.png"><img class="hover_img_download" src="css/icon_menu/download2.png"> <span>Загрузить</span> </button>
+        <a class="button-download" href="#download">
+            <img class="hide_img_download" src="css/icon_menu/download.png">
+            <img class="hover_img_download" src="css/icon_menu/download2.png"> 
+            <span>Загрузить</span> 
+        </a>
     
     </div>
 
@@ -70,16 +78,16 @@
     <div class="content" >
         <div class="cap_rivals">
             <h3 class="rivals_title">Соперники / @zvendra</h3>
-            <div class="sort_rivals">
+            <div class="sort_rivals" mouseenter="Underline()">
                     <a class="sort_rivals_example">Все челленджи</a>
                     <a class="sort_rivals_example">Входящие челленджи</a>
                     <a class="sort_rivals_example">Исходящие челленджи</a>
             </div>
         </div>
 
-        <div class="rivals">
+        <div class="rivals" onload="Color_rivals()" >
             <div class="line_rivals"></div>
-                <div class="rivals_content" >Даниил</div> <div class="line_rivals"></div>
+                <div class="rivals_content">Даниил</div> <div class="line_rivals"></div>
                 <div class="rivals_content">Борис</div> <div class="line_rivals"></div>
                 <div class="rivals_content">Лев</div> <div class="line_rivals"></div>
                 <div class="rivals_content">Тагир</div> <div class="line_rivals"></div>

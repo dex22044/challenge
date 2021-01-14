@@ -54,6 +54,8 @@
     width: auto;
     height: auto;
     padding: 10px 0;
+    left: 200px;
+
     margin: 20px;
     border: 2px solid #2d4262;
     border-radius: 30px;
@@ -79,7 +81,7 @@
     z-index: 2;
 }
 
-.add_photo{
+.add_photo {
     position: relative;
 }
 
@@ -262,7 +264,26 @@
 }
 
 
+.form_confirm_changes {
+    position: relative;
+    width: auto;
+    height: auto;
 
+    margin: auto;
+    border: 2px solid #0066ff;
+    border-radius: 30px;
+
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 29px;
+    line-height: 1.5;
+    color: #dddddb;
+    z-index: 999;
+}
+
+.form_confirm_changes:hover {
+    border: 2px solid #37b9ff;
+}
 
 
 

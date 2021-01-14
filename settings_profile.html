@@ -44,7 +44,7 @@
         <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/messanges2.png"><img class="hide_img" src="css/icon_menu/messanges.png"><div>Сообщения</div></a>
         <a class="nav_link" href="#"><img class="hover_img" src="css/icon_menu/save2.png"><img class="hide_img" src="css/icon_menu/save.png"><div>Сохранённое</div></a>
 
-        <a class="nav_link" href="#profile.html">
+        <a class="nav_link" href="profile.html">
             <img class="hover_img" src="css/icon_menu/profile2.png">
             <img class="hide_img" src="css/icon_menu/profile.png">
             <div>Профиль</div>
@@ -57,7 +57,11 @@
         </a>
     </nav>
 
-    <button type="submit" class="button-download"><img class="hide_img_download" src="css/icon_menu/download.png"><img class="hover_img_download" src="css/icon_menu/download2.png"> <span>Загрузить</span> </button>
+    <a class="button-download" href="#download">
+        <img class="hide_img_download" src="css/icon_menu/download.png">
+        <img class="hover_img_download" src="css/icon_menu/download2.png"> 
+        <span>Загрузить</span> 
+    </a>
 </div>
 
 
@@ -109,7 +113,7 @@
                 </div>
             </div>
             
-            <div class="form_name_profile">
+            <div class="form_confirm_changes">
                     <button class="confirm_changes">Подтвердить</br>изменения</button>
                     <button class="cancel_changes">Отменить</button>
             </div>
@@ -181,7 +185,21 @@
     </div>
 </div>
 
+<div id="download" class="popup_registration">
+    <a href="#main" class="popup_area_registration"></a>
+    <div class="popup_body_registration">
+        <div class="popup_content_registration">
+            <a href="#main" class= "popup_close_registration"><img class="cancel_hide_registration" src="css/icon_popup/cancel.png"> <img class="cancel_hover_registration" src="css/icon_popup/cancel2.png"></a>
 
+            <div class="popup_title_registration">
+                <p>Перетащите файлы в эту область</p>
+                <p class="or_registration">или</p>
+            </div>
+            <button type="button" class="button_registration"> <span>Выберите при помощи проводника</span></button>
+
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
