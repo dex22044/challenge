@@ -95,17 +95,23 @@ function closeOpenTopics() {
 jQuery(document).ready(function(){
     $('.rivals_content:odd').css({'color':'#37b9ff'});
     $('.word_challenge:odd').css({'color':'#37b9ff'});
+    $('.word_challenge').ready(function(){
+        $('.word_challenge:odd').css({'color':'#37b9ff'});
+    });
 
+    $('.sort_rivals_example').mouseenter(function(){
+        $(this).css({
+            opacity: "1",
+            borderBottom: "1px solid",
+            color: "#37b9ff"
+        },1500);
+    });
+
+    $('.sort_rivals_example').mouseleave(function(){
+        $(this).css({
+            borderBottom: "none"
+        },1500);
+    });
 });
 
-jQuery('.sort_rivals_example').mouseenter(function(){
-    $('.sort_rivals_example').css({'border-bottom':'1px solid #37b9ff'});
-});
 
-jQuery('.sort_rivals_example').mouseout(function(){
-    $('.sort_rivals_example').css({'border-bottom':'none'});
-});
-
-jQuery('.word_challenge').ready(function(){
-    $('.word_challenge:odd').css({'color':'#37b9ff'});
-});
