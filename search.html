@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="main.css">
+
     <link rel="stylesheet" type="text/css" href="rivals.css">
+    <link rel="stylesheet" type="text/css" href="settings_profile.css">
     <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
 
@@ -14,8 +17,9 @@
     <script src="bxslider/jquery.easing.1.3.js"></script>
     <script src="bxslider/jquery.fitvids.js"></script>
     <script src="main.js"></script>
+
     <title>
-        Профиль/Challenge
+        Поиск/Challenge
     </title>
 
 </head>
@@ -35,10 +39,10 @@
             <div>Соперники</div>
         </a>
 
-        <a class="nav_link" href="search.html">
+        <a class="nav_link" href="#">
             <img class="hover_img" src="css/icon_menu/search2.png">
-            <img class="hide_img" src="css/icon_menu/search.png">
-            <div>Поиск</div>
+            <img class="hide_img" src="css/icon_menu/search2.png">
+            <div style="color: #37b9ff;">Поиск</div>
         </a>
         <a class="nav_link" href="notification.html">
             <img class="hover_img" src="css/icon_menu/notifications2.png">
@@ -51,7 +55,7 @@
             <img class="hide_img" src="css/icon_menu/messanges.png">
             <div>Сообщения</div>
         </a>
-        
+
         <a class="nav_link" href="saved.html">
             <img class="hover_img" src="css/icon_menu/save2.png">
             <img class="hide_img" src="css/icon_menu/save.png">
@@ -65,9 +69,9 @@
         </a>
 
         <a class="nav_link" href="settings_profile.html">
-            <img class="hover_img" src="css/icon_menu/customization2.png">
+            <img class="hover_img" src="css/icon_menu/customization.png">
             <img class="hide_img" src="css/icon_menu/customization.png">
-            <div>Настройки</div>
+            <div >Настройки</div>
         </a>
     </nav>
 
@@ -99,38 +103,28 @@
 
     
 <div class="content">
-
-    <div class="profile">
-        <img class="avatar" src="css/icon_content/avatar.JPG">
-
-        <div class="info_profile">
-            <p class="name_profile">Зверева Александра</p>
-            <p class="nickname_profile">@zvendra</p>
-            <p class="description_info">Туруру, хочу спать</p>
-            <a class="quantity_rivals">5 соперников</a>
-            <a class="quantity_challenge">1 вызов<br/></a>
-            <button type="submit" class="button_change_profile" onclick="location='settings_profile.html'"  href="#settings_profile.html"><span>Изменить профиль</span> </button>
-
-         </div>
+    <h3 class="rivals_title">Актуальные челленджи для вас</h3>
+    <div class="rivals">
+        <div class="line_rivals"></div>
+            <div class="word_challenge">#ReadingChallenge</div> 
+                <div class="more_challenge">Челленджей: 20</div> 
+                <div class="line_rivals"></div> 
+            <div class="word_challenge">#Meditation</div> 
+                <div class="more_challenge">Челленджей: 20</div> 
+                <div class="line_rivals"></div>
+            <div class="word_challenge">#WalkEveryDay</div> 
+                <div class="more_challenge">Челленджей: 20</div> 
+                <div class="line_rivals"></div>
+            <div class="word_challenge">#Сharging</div> 
+                <div class="more_challenge">Челленджей: 20</div> 
+                <div class="line_rivals"></div>
+            <div class="word_challenge">#DrinkWater</div> 
+                <div class="more_challenge">Челленджей: 20</div> 
+                <div class="line_rivals"></div>
     </div>
 </div>
 
 <div class="topics">
-
-        <form class="form_topics">
-            <div class="div_topics">
-                <h3 class="topics_title">Актуальные темы</h3>
-  
-                <div class="topics_link">#ReadingChallenge</div>
-                <div class="topics_link">#Meditation</div>
-                <div class="topics_link">#WalkEveryDay</div>
-                <div class="topics_link">#Сharging</div>
-                <div class="topics_link">#DrinkWater</div>
-  
-                <button class="all_topics" >Показать ещё</button>
-              </div>
-          </form>
-          
         <div class="buzzword"> 
             <a class="buzzword_link" href="#">Условия предоставления услуг</a>
             <a class="buzzword_link" href="#">Политика конфиденциальности</a>

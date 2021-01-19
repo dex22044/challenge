@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="rivals.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&f..">
 
     <link href="bxslider/jquery.bxslider.css" rel="stylesheet">
@@ -15,7 +16,7 @@
     <script src="main.js"></script>
 
     <title>
-        Соперники/Challenge
+        Уведомления/Challenge
     </title>
 
 </head>
@@ -23,17 +24,18 @@
 <body>
     <div class="menu">
         <a href="main.html"><img class="logo" src="css/logo.png"></a>
+
           <nav class="nav">
             <a class="nav_link" href="main.html">
                 <img class="hover_img" src="css/icon_menu/main2.png">
                 <img class="hide_img" src="css/icon_menu/main.png">
                 <div>Главная</div>
             </a>
-
+    
             <a class="nav_link" href="rivals.html">
                 <img class="hover_img" src="css/icon_menu/rivals2.png">
-                <img class="hide_img" src="css/icon_menu/rivals2.png">
-                <div style="color: #37b9ff;">Соперники</div>
+                <img class="hide_img" src="css/icon_menu/rivals3.png">
+                <div>Соперники</div>
             </a>
             
             <a class="nav_link" href="search.html">
@@ -44,8 +46,8 @@
             
             <a class="nav_link" href="notification.html">
                 <img class="hover_img" src="css/icon_menu/notifications2.png">
-                <img class="hide_img" src="css/icon_menu/notifications.png">
-                <div>Уведомления</div>
+                <img class="hide_img" src="css/icon_menu/notifications2.png">
+                <div style="color: #37b9ff;">Уведомления</div>
             </a>
 
             <a class="nav_link" href="messanges.html">
@@ -78,6 +80,7 @@
             <img class="hover_img_download" src="css/icon_menu/download2.png"> 
             <span>Загрузить</span> 
         </a>
+    
     </div>
 
     <!--start of advertising-->
@@ -98,21 +101,30 @@
 
     <div class="content" >
         <div class="cap_rivals">
-            <h3 class="rivals_title">Соперники / @zvendra</h3>
+            <h3 class="rivals_title">Уведомления</h3>
             <div class="sort_rivals" mouseenter="Underline()">
-                    <a class="sort_rivals_example">Все челленджи</a>
-                    <a class="sort_rivals_example">Входящие челленджи</a>
-                    <a class="sort_rivals_example">Исходящие челленджи</a>
+                    <a class="sort_rivals_example">Все уведомления</a>
+                    <a class="sort_rivals_example">Упоминания</a>
             </div>
         </div>
 
         <div class="rivals">
             <div class="line_rivals"></div>
-                <div class="rivals_content">Даниил</div> <div class="line_rivals"></div>
-                <div class="rivals_content">Борис</div> <div class="line_rivals"></div>
-                <div class="rivals_content">Лев</div> <div class="line_rivals"></div>
-                <div class="rivals_content">Тагир</div> <div class="line_rivals"></div>
-                <div class="rivals_content">Андрей</div> <div class="line_rivals"></div>
+                <div class="word_challenge">Даниил оценил ваш челлендж</div> 
+                    <div class="more_challenge">вчера в 13:05</div> 
+                    <div class="line_rivals"></div> 
+                <div class="word_challenge">Борис принял ваш вызов</div> 
+                    <div class="more_challenge">вчера в 10:01</div> 
+                    <div class="line_rivals"></div>
+                <div class="word_challenge">Тагир принял вашу заявку в соперники</div> 
+                    <div class="more_challenge">вчера в 9:21</div> 
+                    <div class="line_rivals"></div>
+                <div class="word_challenge">Борис принял  вашу заявку в соперники</div> 
+                    <div class="more_challenge">вчера в 9:01</div> 
+                    <div class="line_rivals"></div>
+                <div class="word_challenge">Лев бросил вам вызов</div> 
+                    <div class="more_challenge">вчера в 01:54</div> 
+                    <div class="line_rivals"></div>
         </div>
     </div>
 
