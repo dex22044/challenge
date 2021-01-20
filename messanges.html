@@ -174,7 +174,26 @@
                 <p>Перетащите файлы в эту область</p>
                 <p class="or_registration">или</p>
             </div>
-            <button type="button" class="button_registration"> <span>Выберите при помощи проводника</span></button>
+            <button type="button" class="button_registration" id="uploadChallengeExplorerSelectBtn" onclick="loadFile()"> <span>Выберите при помощи проводника</span></button>
+
+            <script>
+                function loadFile() {
+                    $(document.querySelector('#uploadChallengeVideoInput')).trigger('click');
+                }
+                function fileChanged(elem) {
+                    if (elem.files.length > 0) {
+                        document.querySelector('#uploadChallengeForm').style.display = 'block';
+                        document.querySelector('#uploadChallengeExplorerSelectBtn span').innerHTML = elem.files[0].name;
+                    }
+                }
+            </script>
+
+            <form enctype="multipart/form-data" action="/Files/UploadChallenge" method="post" id="uploadChallengeForm" style="display: none">
+                <input type="file" id="uploadChallengeVideoInput" style="display: none" name="videoFile" onchange="fileChanged(this)" />
+                <input type="text" id="uploadChallengeLoginToInput" name="userNameTo" />
+                <input type="text" id="uploadChallengeDescriptionInput" name="challengeDescription" />
+                <button type="submit">Залить на сервер</button>
+            </form>
 
         </div>
     </div>
