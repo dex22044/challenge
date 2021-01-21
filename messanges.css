@@ -1,0 +1,16 @@
+.form_messanges {
+    position: relative;
+    width: 90%;
+    padding: 10px 0;
+    
+    margin: 20px;
+    border: 2px solid #2d4262;
+    border-radius: 30px;
+
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 29px;
+    line-height: 1.5;
+    color: #dddddb;
+    z-index: 999;
+}

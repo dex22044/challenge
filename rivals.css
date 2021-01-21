@@ -8,7 +8,6 @@
 }
 
 .rivals_title {
-    background: #131c25;
     width: 100%;
     color: #37b9ff; 
     font-size: 30px;
@@ -27,10 +26,9 @@
 .sort_rivals_example {
     cursor: pointer;
     color: #dddddb;
-    padding: 20px;
+    padding: 15px;
     margin: 15px;
-    width: 50%;
-    right: 50%;
+
     vertical-align: top;
     transition: all 0.8s;
     word-break: normal; 
@@ -38,7 +36,6 @@
 }
 .sort_rivals_example:hover {
     color: #37b9ff; 
-    /*border-bottom: 1px solid #37b9ff;*/
 }
 
 .rivals{
@@ -68,7 +65,5 @@
     z-index: -1;
     width: 100%;
     border-top: 1px solid #dddddb;
-    right: -50px;
-    margin-right: -150px;
     margin-bottom: 10px;
 }

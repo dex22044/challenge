@@ -103,7 +103,6 @@ jQuery(document).ready(function(){
         $(this).css({
             opacity: "1",
             borderBottom: "1px solid",
-            color: "#37b9ff"
         },1500);
     });
 
