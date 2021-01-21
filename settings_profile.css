@@ -94,6 +94,7 @@
     cursor: pointer;
     background: url(css/icon_content/avatar.JPG);
     background-size: auto 100%;
+    background-position: center;
 }
 
 .avatar_add {
