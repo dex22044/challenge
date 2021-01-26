@@ -1,16 +1,8 @@
+"use strict";
 let isHideTopics = false;
 
-/* MENU */
 
 
-
-/* END MENU */
-
-
-
-
-
-/* CONTENT */
 
 /* Change icon music */
 function sound_off(sound) {
@@ -48,8 +40,6 @@ function closeOpenMenu() {
     }
 };
 
-
-
 /* Open/Close relevant topics */
 function closeOpenTopics() {
     let top = document.querySelector('.arrow_topics');
@@ -78,20 +68,6 @@ function closeOpenTopics() {
     }
 };
 
-
-
-/* END CONTENT */
-
-
-
-
-
-/* TOPICS */
-
-
-
-/* END TOPICS */
-
 jQuery(document).ready(function(){
     $('.rivals_content:odd').css({'color':'#37b9ff'});
     $('.word_challenge:odd').css({'color':'#37b9ff'});
@@ -113,4 +89,5 @@ jQuery(document).ready(function(){
     });
 });
 
-
+let age = prompt('Во сколько лет у тебя депрессия?', 0);
+alert(`Депрессия в ${age} лет, поздравляю!`); 
