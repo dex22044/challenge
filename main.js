@@ -89,5 +89,20 @@ jQuery(document).ready(function(){
     });
 });
 
-let age = prompt('Во сколько лет у тебя депрессия?', 0);
-alert(`Депрессия в ${age} лет, поздравляю!`); 
+    $('.word_challenge').ready(function(){
+    $('.word_challenge:odd').css({'color':'#37b9ff'});
+});
+
+$('.sort_rivals_example').mouseenter(function(){
+    $(this).css({
+        opacity: "1",
+        borderBottom: "1px solid",
+        color: "#37b9ff"
+    },1500);
+});
+
+$('.sort_rivals_example').mouseleave(function(){
+    $(this).css({
+        borderBottom: "none"
+    },1500);
+});
