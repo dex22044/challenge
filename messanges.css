@@ -8,7 +8,7 @@
 .form_messanges {
     position: relative;
     width: 90%;
-    padding: 10px 0;
+    padding: 0px 0;
     
     margin: 20px;
     border: 2px solid #2d4262;
@@ -38,6 +38,24 @@
     border-radius: 20px;
 }
 
+.messanges2 {
+    position: relative;
+    cursor: pointer;
+
+    display: block;
+    min-width: 5px;
+    width: auto;
+    padding: 1px 20px;
+    margin: 10px;
+    right: 200px;
+    background: #365583;
+    color: #dddddb;
+
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+}
+
 .header_messanges {
     position: relative;
     left: 35%;
@@ -55,4 +73,46 @@
     line-height: 40px;
     border-width: 0;
     border-radius: 20px;
+}
+
+.send {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    padding: 0px 20px;
+
+    width: 200px;
+    height: 45px; 
+
+    font-size: 20px;
+    letter-spacing: 1.2px;
+
+    background-color: #253752;
+
+    border-radius: 30px;
+    border: 0;
+    color: #dddddb;
+
+    box-shadow: 0 5px 0px #3e5c88;
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+}
+
+.send:hover {
+    padding: 0px 45px;
+    box-shadow: 0 5px 0px #253752;
+    background-color: #3e5c88;
+}
+
+.send img {
+    position: absolute;
+    display: flex;
+    height: 30px; 
+    width: 30px;
+    top: 8px;
+    right: 15px;
+    bottom: 8px;
 }

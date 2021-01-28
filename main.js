@@ -106,3 +106,19 @@ $('.sort_rivals_example').mouseleave(function(){
         borderBottom: "none"
     },1500);
 });
+
+$('.send_icon').mouseover(function(){
+    $(this).attr("src", "css/icon_messange/share2.png");
+    console.log("123");
+} );
+
+/*function() {
+    if $('.send').mouseenter() {
+        $(this).innerHTML({
+            img src="css/icon_messange/share2.png"
+        },1000)
+    } 
+    else {
+    <img src="css/icon_messange/share.png"> 
+};
+};*/
