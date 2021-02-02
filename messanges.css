@@ -7,15 +7,16 @@
 
 .form_messanges {
     position: relative;
+
+    display: inline-block;
+    justify-content: flex-end;
+
     width: 90%;
     padding: 0px 0;
-    
     margin: 20px;
     border: 2px solid #2d4262;
     border-radius: 30px;
 
-    display: inline-block;
-    justify-content: space-between;
     font-size: 29px;
     line-height: 1.5;
     color: #dddddb;
@@ -26,11 +27,10 @@
     position: relative;
     cursor: pointer;
 
-    display: block;
-    width: auto;
+    width: 150px;
     padding: 1px 20px;
     margin: 10px;
-    background: #365583;
+    background: #2d4262;
     color: #dddddb;
 
     line-height: 40px;
@@ -40,14 +40,15 @@
 
 .messanges2 {
     position: relative;
+
     cursor: pointer;
 
     display: block;
     min-width: 5px;
-    width: auto;
+    width: 150px;
     padding: 1px 20px;
     margin: 10px;
-    right: 200px;
+    left: 400px;
     background: #365583;
     color: #dddddb;
 

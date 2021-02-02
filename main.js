@@ -87,6 +87,13 @@ jQuery(document).ready(function(){
             borderBottom: "none"
         },1500);
     });
+
+    //Первая функция при наведении, вторая при снятия мыши с компонента
+    $('.send').hover(function(){
+        $(this).children("img").attr("src","css/icon_messange/share2.png");
+    },function(){
+        $(this).children("img").attr("src","css/icon_messange/share.png");
+    });
 });
 
     $('.word_challenge').ready(function(){
@@ -107,10 +114,10 @@ $('.sort_rivals_example').mouseleave(function(){
     },1500);
 });
 
-$('.send_icon').mouseover(function(){
+/*$('.send_icon').mouseover(function(){
     $(this).attr("src", "css/icon_messange/share2.png");
     console.log("123");
-} );
+} );*/
 
 /*function() {
     if $('.send').mouseenter() {

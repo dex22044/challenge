@@ -246,7 +246,7 @@ body {
 /* Icon */
 .icon {
     position: absolute;
-    flex-direction: column;
+    display: inline-flex;
     justify-content: space-between;
     cursor: pointer;
 
@@ -739,7 +739,7 @@ body {
 
 .line .enter {
     margin: 3px;
-    width: 200px;
+    width: 70%;
     float: left;
     background-color: inherit;
     border: 0;
