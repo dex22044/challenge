@@ -89,7 +89,7 @@ jQuery(document).ready(function(){
     });
 
     //Первая функция при наведении, вторая при снятия мыши с компонента
-    $('.send').hover(function(){
+    $('.send').hover(function() {
         $(this).children("img").attr("src","css/icon_messange/share2.png");
     },function(){
         $(this).children("img").attr("src","css/icon_messange/share.png");
