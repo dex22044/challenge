@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5 {
 
 /* Section */
 .section {
-	background-color: #ff8686;
+	background-color: #ffa1e0;
 }
 
 .selction_padding {
@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Caveat', cursive;
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .fillings {
@@ -313,13 +314,64 @@ h1, h2, h3, h4, h5 {
 	flex: 1 1 0;
 }
 
-.icon_fillings {
-
+.cakes {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.fillings_item_text {
+.cakes_item {
+	position: relative;
+
+	background-color: #7a0052;
 	
 }
+
+.cakes_item:hover .cakes_img {
+	transform: translate3d(-10px, -10px, 0);
+}
+
+.cakes_item:hover .cakes_img img {
+	opacity: .4;
+}
+
+.cakes_item:hover .cakes_description {
+	opacity: 1;
+}
+
+.cakes_img {
+	background: linear-gradient(to bottom, #72004c , #8d0021);
+
+	transition: transform .1s linear;
+}
+
+.cakes_img img {
+	display: block;
+	transition: opacity .1s linear;
+	width: 350px;
+	height: 450px;
+}
+
+.cakes_description {
+	width: 100%;
+
+	color: #f9e0e6;
+	text-transform: uppercase;
+	font-family: 'Comfortaa', cursive;
+	font-size: 25px;
+	text-align: center;
+	opacity: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+
+	transition: opacity .1s linear;
+}
+
+
 
 /*  */
 /*  */
