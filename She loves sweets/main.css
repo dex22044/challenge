@@ -8,13 +8,11 @@ body {
    	font-size: 15px;
    	color: rgb(0, 0, 0);
 	background-color: #ffa1e0;
-	/*background-color: #f9e0e6;*/
 	margin: 0;
 	padding: 0;
 }
 
 .color {
-	/*background-color: #ffa1e0;*/
 	background-color: #ffc4db;
 }
 
@@ -23,15 +21,16 @@ body {
 }
 
 .standard_padding {
-	padding: 80px 0;
+	padding: 40px 0;
 }
 
 .transition {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	left: 0;
 	right: 0;
-
+	bottom: 0;
+	top: 0;
 	min-width: 100%;
 	position: relative;
 }
@@ -68,8 +67,8 @@ h1, h2, h3, h4, h5 {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1000;
-	background-color: #ff7ad3;
+	z-index: 1;
+	background-color: #ffc4db;
 }
 
 .header_inner {
@@ -83,6 +82,8 @@ h1, h2, h3, h4, h5 {
 	font-size: 40px;
 	color: #1d1300;
 	text-align: center;
+	text-decoration: none;
+	padding-right: 30px;
 }
 
 /* Nav */
@@ -110,7 +111,7 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	height: 3px;
 
-	background-color: #ffffff;
+	background-color: #e42d6b;
 	opacity: 0;
 
 	position: absolute;
@@ -120,14 +121,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav_link:hover {
-	color: #ffffff;
+	color: #e42d6b;
 }
 
 .nav_link:hover:after {
 	opacity: 1;
 }
 
+.call {
+	padding-left: 10px;
+}
 
+.call_elem {
+	display: inline-flex;
+	margin: 5px;
+}
 
 /* INTRO */
 .intro {
@@ -204,6 +212,7 @@ h1, h2, h3, h4, h5 {
 	font-size: 30px;
 	border-radius: 30px;
 	border: none;
+	cursor: pointer;
 
 	color: #1d1300;
 	background-color: #e42d6b;
@@ -445,6 +454,34 @@ h1, h2, h3, h4, h5 {
 	font-size: 30px;
 	left: 50px;
 	top: 25px;
+	cursor: pointer;
+
+	color: #1d1300;
+	text-decoration: none;
+}
+
+.selction_maps:hover {
+	color: #e42d6b;
+	transition: color 0.2s linear;
+}
+
+.selction_maps:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+
+	background-color: #e42d6b;
+	opacity: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+}
+
+.selction_maps:hover:after {
+	opacity: 1;
 }
 
 .contacts_description {
@@ -462,3 +499,171 @@ h1, h2, h3, h4, h5 {
 
 
 /*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popup autorization*/
+.popup {
+	font-family: 'Caveat', cursive;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #220016d2;
+	top: 0;
+	left: 0;
+	z-index: 3;
+    opacity: 0;
+
+	visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*transform: perspective(600px) translate(0px, 0%), rotateX(0deg);*/
+.popup:target .popup_content{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.popup_body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 30px 10px;
+    transition: all 0.8s ease 0s;
+}
+
+/*transform: perspective(600px) translate(0px,-100%), rotateX(45deg);*/
+.popup_content {
+	border-radius: 30px;
+	background-color: #ffa8e2; 
+	color: #1d1300;
+	min-width: 700px;
+	max-width: 900px;
+	padding: 30px;
+    transform: translate(0px, -100%);
+
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+.popup_close {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+    color: #000000;
+	z-index: 4;
+}
+
+.popup_close img {
+    height: 28px; 
+    width: 28px;
+    margin-top: 8px;
+}
+
+/* Одно из изображений прячем */
+.popup_content .cancel_hide {
+    display: none;
+}
+
+/* При наведении показываем выделенное изображение */
+.popup_content:hover .cancel_hide {
+    display: inline;
+}
+
+/* При наведении старое изображение прячем */
+.popup_content:hover .cancel_hide {
+    display: none;
+}
+
+.popup .open {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.popup_title {
+    text-align: center;
+	font-size: 60px;
+	line-height: 1em;
+	margin-bottom: 30px;
+}
+
+.popup_text {
+	font-size: 30px;
+	font-family: 'Comfortaa', cursive;
+	padding-left: 30px;
+}
+
+.form {
+	cursor: pointer;
+	padding: 10px;
+    width: auto;
+
+    margin-bottom: 10px;
+    background: #ffc4db;
+    color: #1d1300;
+
+    line-height: 40px;
+    border-radius: 30px;
+	display: flex;
+}
+
+.form .enter {
+	float: right;
+	margin: 0px 0px 5px 30px;
+    background-color: inherit;
+    border: 0;
+    font-size: 1em;
+    color: inherit;
+    border-bottom: 2px solid #e42d6b;
+}
+
+.form .enter:focus{
+    border-bottom: 2px solid #EAEAEA;
+}
+/* Popup autorization end */

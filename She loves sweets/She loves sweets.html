@@ -18,23 +18,29 @@
 <header class="header">
 	<div class="container">
 		<div class="header_inner">
-			<div class="header_logo">She loves sweets</div>
+			<a class="header_logo" href="main">She loves sweets</a>
 			<nav class="nav">
 				<a class="nav_link" href="#call_to_action">Главная</a>
-				<a class="nav_link" href="#">Преимущества</a>
-				<a class="nav_link" href="#">Торты</a>
-				<a class="nav_link" href="#">Пироженые</a>
-				<a class="nav_link" href="#">Капкейки</a>
-				<a class="nav_link" href="#">Коржи</a>
-				<a class="nav_link" href="#">Крема</a>
-				<a class="nav_link" href="#">Начинки</a>
-				<a class="nav_link" href="#">Доставка и оплата</a>
-				<a class="nav_link" href="#">Контакты</a>
-				<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/telephone.png">
-				<a class="nav_link" href="#">+7 916 678-85-68</a>
-				<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/instagram.png">
-				<a class="nav_link" href="#">@she_lovessweets</a>
+				<a class="nav_link" href="#selction_why">Преимущества</a>
+				<a class="nav_link" href="#tort">Торты</a>
+				<a class="nav_link" href="#cakes">Пироженые</a>
+				<a class="nav_link" href="#capcakes">Капкейки</a>
+				<a class="nav_link" href="#cookie_monster">Коржи</a>
+				<a class="nav_link" href="#cream">Крема</a>
+				<a class="nav_link" href="#fillings">Начинки</a>
+				<a class="nav_link" href="#delivery">Доставка и оплата</a>
+				<a class="nav_link" href="#contacts">Контакты</a>
 			</nav>
+			<div class="call">
+				<div class="call_elem">
+					<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/telephone.png">
+					<a class="nav_link" href="tel:+7 916 678-85-68">+7 916 678-85-68</a>
+				</div>
+				<div class="call_elem">
+					<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/instagram.png">
+					<a class="nav_link" href="https://instagram.com/she_lovessweets?igshid=n9b8l3d3cmwc">@she_lovessweets</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -53,16 +59,16 @@
 	<div class="call_to_action" id="call_to_action">
 		<div class="container"> 
 			<h1 class="action_words">Сделайте заказ от 2000 рублей прямо сейчас с бесплатной доставкой</h1>
-			<button class="button_action">Оставить заявку</button>
+			<button class="button_action" onclick="location='#action'">Оставить заявку</button>  
 		</div>
 	</div>
 </div>
 
 <div class="transition">
-	<img src="photo/lending/transition.jpg" alt="">
+	<img src="photo/lending/transition2.jpg">
 </div>
 
-<div class="color">
+<div class="color" id="selction_why">
 	<div class="standard_padding">
 		<h2 class="selction_why">Почему выбирают именно нас?</h2> 
 		<div class="selction_header">
@@ -100,6 +106,10 @@
 	</div>
 </div>
 
+<div class="transition">
+	<img src="photo/lending/transition.jpg">
+</div>
+
 <div class="color2">
 	<div class="statistics">
 		<div class="container">
@@ -123,7 +133,11 @@
 	</div>
 </div>
 
-<div class="color">
+<div class="transition">
+	<img src="photo/lending/transition2.jpg">
+</div>
+
+<div class="color" id="tort">
 	<div class="container">
 		<div class="standard_padding">
 			<h2 class="selction_why">Торты</h2> 
@@ -151,17 +165,36 @@
 
 			</div>
 
-			<div class="cakes_item">
-				<div class="cakes_img cakes_img_two">
-					<img src="photo/butterfly_cake.JPG">
+			<div class="cakes">
+				<div class="cakes_item">
+					<div class="cakes_img">
+						<img src="photo/butterfly_cake.JPG">
+					</div>
+					<div class="cakes_description">Розовый</div>
 				</div>
-				<div class="cakes_description">Розовый</div>
+				<div class="cakes_item">
+					<div class="cakes_img">
+						<img src="photo/flower_cake.JPG">
+					</div>
+					<div class="cakes_description">Цветочный</div>
+				</div>
+				<div class="cakes_item">
+					<div class="cakes_img">
+						<img src="photo/snickers_cake.JPG">
+					</div>
+					<div class="cakes_description">Сникерс</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="color2">
+<div class="transition">
+	<img src="photo/lending/transition.jpg">
+</div>
+
+<div class="color2" id="cakes">
 	<div class="container">
 		<div class="standard_padding">
 			<h2 class="selction_why">Пирожные</h2> 
@@ -191,7 +224,11 @@
 	</div>
 </div>
 
-<div class="color">
+<div class="transition">
+	<img src="photo/lending/transition2.jpg">
+</div>
+
+<div class="color" id="capcakes">
 	<div class="container">
 		<div class="standard_padding">
 			<h2 class="selction_why">Капкейки</h2> 
@@ -221,7 +258,11 @@
 	</div>
 </div>
 
-<div class="color2">
+<div class="transition">
+	<img src="photo/lending/transition.jpg">
+</div>
+
+<div class="color2" id="cookie_monster">
 	<div class="standard_padding">
 		<h2 class="selction_why">Коржи</h2> 
 		<h2 class="selction_subtitle">Всего 3 вида наивкуснейших видов коржей</h2>
@@ -243,7 +284,11 @@
 	</div>
 </div>
 
-<div class="color">
+<div class="transition">
+	<img src="photo/lending/transition2.jpg">
+</div>
+
+<div class="color" id="cream">
 	<div class="standard_padding">
 		<h2 class="selction_why">Крема</h2> 
 		<h2 class="selction_subtitle">Крема классные, правда</h2>
@@ -264,7 +309,11 @@
 	</div>
 </div>
 
-<div class="color2">
+<div class="transition">
+	<img src="photo/lending/transition.jpg">
+</div>
+
+<div class="color2" id="fillings">
 	<div class="container">
 		<div class="standard_padding">
 			<h2 class="selction_why">Начинки</h2> 
@@ -294,6 +343,10 @@
 	</div>
 </div>
 
+<div class="transition" id="delivery">
+	<img src="photo/lending/transition2.jpg">
+</div>
+
 <div class="color">
 	<div class="standard_padding">
 		<h2 class="selction_why">Доставка</h2> 
@@ -303,6 +356,10 @@
 	</div>
 </div>
 
+<div class="transition">
+	<img src="photo/lending/transition.jpg">
+</div>
+
 <div class="color2">
 	<div class="standard_padding">
 		<h2 class="selction_why">Способы оплаты</h2> 
@@ -310,7 +367,11 @@
 	</div>
 </div>
 
-<div class="color">
+<div class="transition">
+	<img src="photo/lending/transition2.jpg">
+</div>
+
+<div class="color" id="contacts">
 	<div class="standard_padding">
 		<div class="contacts">
 			<div class="contacts_description">
@@ -318,16 +379,16 @@
 
 				<div class="contacts_padding">
 					<img class="cookie_monster_icon" style="width: 80px; height: 80px;" src="photo/icons/telephone.png">
-					<h2 class="selction_maps">Телефон: +7 916 678-85-68</h2>
+					<a class="selction_maps" href="tel:+7 916 678-85-68">Телефон: +7 916 678-85-68</a>
 				</div>	
 				<div class="contacts_padding" style="display: flex; margin-top: 25px;">
 					<img class="cookie_monster_icon" style="width: 80px; height: 80px;" src="photo/icons/instagram.png">
-					<h2 class="selction_maps">Instagram: she_lovessweets</h2>
+					<a class="selction_maps" href="https://instagram.com/she_lovessweets?igshid=n9b8l3d3cmwc">Instagram: she_lovessweets</a>
 				</div>
 
 				<div class="contacts_padding" style="display: flex; margin-top: 25px;">
 					<img class="cookie_monster_icon" style="width: 80px; height: 80px;" src="photo/icons/placeholder.png">
-					<h2 class="selction_maps">Мытищи, Москва и МО</h2>
+					<h2 class="selction_maps" style="cursor: default;">Мытищи, Москва и МО</h2>
 				</div>
 			</div>
 			<div class="contacts_maps">
@@ -338,10 +399,42 @@
 	</div>
 </div>
 
+<div class="transition">
+	<img src="photo/lending/transition.jpg">
+</div>
+
 <div class="color2">
 	<div class="standard_padding">
 		<div class="header_logo" style="margin-bottom: 10px;">She loves sweets</div>
 		<h2 class="selction_subtitle2">Все права защищены. Политика конфиденциальности.</h2>
+	</div>
+</div>
+
+<div id="action" class="popup">
+	<a href="#" class="popup_area"></a>
+	<div class="popup_body">
+		<div class="popup_content">
+            <a href="#" class= "popup_close">
+                <img class="cancel_hover" src="photo/icons/cancel.png"> 
+            </a>
+			<div class="popup_title">Оставьте свои данные<br>и мы с вами свяжемся!</div>
+			<div class="form">
+				<label class="popup_text" for="login">Имя</label>
+				<input id="login" class="enter" type="text" class="input_box"/>
+			</div>
+			
+			<div class="form">
+				<label class="popup_text" for="login2">Фамилия</label>
+				<input id="login2" class="enter" type="text" class="input_box"/>
+			</div>		
+				
+			<div class="form">
+				<label class="popup_text" for="phone">Номер телефона</label>
+				<input id="phone" class="enter" type="text" class="input_box"/>
+			</div>
+			<button class="button_action" style="margin-bottom: 20px;">Оставить заявку</button>
+
+		</div>
 	</div>
 </div>
 
