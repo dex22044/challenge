@@ -13,10 +13,12 @@ body {
 }
 
 .color {
+	margin-top: -10px;
 	background-color: #ffc4db;
 }
 
 .color2 {
+	margin-top: -10px;
 	background-color: #f9e0e6 ;
 }
 

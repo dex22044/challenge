@@ -1,0 +1,61 @@
+/* CAKES */
+.saved {
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.saved_item {
+	position: relative;
+	background-color: #37b9ff;
+    cursor: pointer;
+}
+
+.saved_item:hover .saved_img {
+	transform: translate3d(-10px, -10px, 0);
+}
+
+.saved_item:hover .saved_img img {
+	opacity: .2;
+}
+
+.saved_item:hover .saved_description {
+	opacity: 1;
+}
+
+.saved_img {
+	background: linear-gradient(to bottom, #3e5c88 , #2d4262);
+	transition: transform .1s linear;
+}
+
+.saved_img img {
+	display: block;
+	transition: opacity .1s linear;
+	width: 250px;
+	height: 250px;
+    object-fit: cover;
+}
+
+.saved_img_two {
+	margin-top: 80px;
+}
+
+.saved_description {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+    line-height: 1.8em;
+
+	color: #f9e0e6;
+	font-size: 15px;
+	text-align: center;
+	opacity: 0;
+
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+	transition: opacity .1s linear;
+}
