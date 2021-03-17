@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5 {
 /* popup_documents */
 .popup_documents {
     position: fixed;
-    visibility: hidden;
+    display: none;
     width: 200px;
     background-color: #121214af;
     top: 130px;
