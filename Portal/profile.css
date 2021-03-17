@@ -1,0 +1,37 @@
+/* set */
+.settings_profile {
+    width: 400px;
+    border-right: 1px solid #ffffff;
+    background-color: #50545e;
+}
+
+.set_elem {
+    margin: 15px;
+    text-align: left;
+    padding-left: 200px;
+
+}
+
+/* set end */
+
+
+.info_student {
+    display:inline-flex;
+    flex-direction: row;
+    margin-left: 500px;
+    background-color: brown;
+}
+
+.fio_elem {
+    margin: 15px;
+}
+
+.fio_content {
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.text_content {
+
+}
