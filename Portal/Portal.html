@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+
+	<!--<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<title>
+		Сызранский государственный университет имени Филиппа Лимонадова
+	</title>
+
+</head>
+
+<body>
+<header class="header">
+	<div class="container">
+		<div class="header_inner">
+			<a class="header_logo" href="Portal.html">Портал</a>
+			<nav class="nav" mouseenter="Underline()">
+				<a class="nav_link" href="#documents">Документы</a>
+				<a class="nav_link" href="#">Обучение</a>
+				<a class="nav_link" href="#">Личный кабинет</a>
+				<a class="nav_link" href="#">Рейтинг</a>
+
+			</nav>
+			<div class="profile">
+				<div class="profile_elem">
+					<a class="nav_link" href="#profile">Профиль</a>
+					<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/user.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="content">
+	<a class="title_content">Новости</a>
+	<p class="text_content">Блалала, потупайте, на этой странице все главные новости этого Университета</p>
+
+</div>
+
+<div id="profile" class="popup">
+    <a href="#main" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#main" class= "popup_close">x
+                <img class="cancel_hide" src="photo/icons/close.png"> 
+            </a>
+
+            <div class="popup_title">
+                <p>Регистрация</p>
+            </div>
+
+            <form action="" class="form_login">
+
+                <div class="line">
+                    <label for="login">Логин</label>
+                    <input id="login" class="enter" type="text" class="input_box"/>
+                </div>
+
+                <div class="line">
+                    <label for="password">Пароль</label>
+                    <input id="password" class="enter" type="password" class="input_box"/>
+                </div>
+
+                <input type="checkbox" id="custom-checkbox">
+                <label for="custom-checkbox">Запомнить меня</label>
+                
+                <div class="line">
+                    <button type="button" onclick="location='profile.html'" class="button_enter"> <span>Войти</span></button>
+                    <button type="button" class="button_enter"> <span>Зарегистрироваться</span></button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="" class="popup_documents">
+        <div class="popup_documents_content">
+            <a class="popup_documents_title">Персональные данные</a>
+            <a class="popup_documents_title">Приказ о зачислении</a>
+            <a class="popup_documents_title">Заявление о согласии<br>на зачисление</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+/*303136 темный
+363940 светлый */
+body {  
+	font-family: 'Open Sans', sans-serif;
+   	font-size: 15px;
+   	color: #ffff;
+	background-color: #363940;
+	margin: 0;
+	padding: 0;
+}
+
+ *,
+ *:before
+ *:after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+.standard_padding {
+	padding: 40px 0;
+
+}
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+/* Container end*/
+
+
+/* HEADER */
+.header {
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: #303136;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_logo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	padding-right: 30px;
+}
+/* HEADER END */
+
+/* NAV */
+.nav {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0 15px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.2s linear;
+	margin: 10px;
+	word-spacing: 3px;
+}
+
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+
+	background-color: #37b9ff;
+	opacity: 0;
+
+	position: absolute;
+	top: 115%;
+	left: 0;
+	z-index: 1;
+}
+/*
+.nav_link:hover {
+	color: #37b9ff;
+}
+
+
+.nav_link:hover:after {
+	opacity: 1;
+}
+*/
+.profile {
+	padding-left: 10px;
+}
+
+.profile_elem {
+	display: inline-flex;
+	margin: 5px;
+}
+/* NAV END */
+
+/* CONTENT */
+.content {
+	width: auto;
+    min-height: 1000px;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+
+.news {
+	align-items: center;
+	right: 50%;
+}
+
+.title_content {
+	font-size: 30px;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.text_content {
+	font-size: 15px;
+	margin-right: 50%;
+}
+/* CONTENT END */
+
+
+
+
+
+
+
+
+
+
+
+/* Popup autorization*/
+.popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: #121214af;
+    background-position: center;
+    color: #37b9ff;
+    opacity: 0;
+
+
+    z-index: 999;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*transform: perspective(600px) translate(0px, 0%), rotateX(0deg);*/
+.popup:target .popup_content{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.popup_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10px;
+    transition: all 0.8s ease 0s;
+}
+
+/*transform: perspective(600px) translate(0px,-100%), rotateX(45deg);*/
+.popup_content {
+    position: relative;
+    padding: 30px;
+    background-color: #303136;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+.popup_close {
+    position: absolute;
+    right: 30px;
+    top: 10px;;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+    color: #dddddb;
+	z-index: 10;
+}
+
+.popup_close img {
+    height: 28px; 
+    width: 28px;
+    margin-top: 8px;
+}
+
+/* Одно из изображений прячем */
+.popup_content .cancel_hide {
+    display: none;
+}
+
+/* При наведении показываем выделенное изображение */
+.popup_content:hover .cancel_hide {
+    display: inline;
+}
+
+/* При наведении старое изображение прячем */
+.popup_content:hover .cancel_hide {
+    display: none;
+}
+
+.popup_title {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 20px;
+}
+
+.popup.open {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+/* Popup autorization end */
+
+
+
+
+
+/* Form enter */
+.form_login {
+    width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+.line {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.line label {
+    width: 100px;
+    float: left;
+}
+
+.line .enter {
+    margin: 3px;
+    width: 70%;
+    float: left;
+    background-color: inherit;
+    border: 0;
+    font-size: 1em;
+    color: inherit;
+    border-bottom: 2px solid #37b9ff;
+}
+
+.line .enter:focus{
+    border-bottom: 2px solid #dddddb;
+}
+
+.button_enter {
+    position: relative;
+    cursor: pointer;
+    font-size: large;
+    background-color: #26272be1;;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    border: 2px solid #dddddb;
+    color: #dddddb;
+    transition: .4s;
+    text-align: center;
+}
+
+  .button_enter:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: .4s;
+}
+
+.button_enter:hover:after {
+    border-color: #dddddb;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+
+/* Form enter end */
+
+
+
+
+
+/* popup_documents */
+.popup_documents {
+    position: fixed;
+    visibility: hidden;
+    width: 200px;
+    background-color: #121214af;
+    top: 130px;
+    left: 550px;
+    color: #37b9ff;
+    visibility: visible;
+    line-height: 1.7em;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px;
+    border-color: #37b9ff;
+    border-style: solid;
+}
+
+.popup_documents_title:hover {
+	color: #37b9ff;
+}
+
+.popup_documents_title {
+    text-align: left;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 10px;
+    right: 10px;
+}
+
+/* Popup_documents end */
