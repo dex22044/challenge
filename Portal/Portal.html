@@ -26,21 +26,49 @@
 	<div class="container">
 		<div class="header_inner">
 			<a class="header_logo" href="Portal.html">Портал</a>
-			<nav class="nav" mouseenter="Underline()">
-				<a class="nav_link" href="#documents" onmouseover="document.querySelector('.popup_documents').style.display = 'block';"
-                onmouseout="document.querySelector('.popup_documents').style.display = 'none';">Документы</a>
-				<a class="nav_link" href="#">Обучение</a>
-				<a class="nav_link" href="#">Личный кабинет</a>
-				<a class="nav_link" href="#">Рейтинг</a>
 
-			</nav>
-			<div class="profile">
-				<div class="profile_elem">
-					<a class="nav_link" href="#profile">Профиль</a>
-					<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/user.png">
-				</div>
-			</div>
-		</div>
+            <div class="nav">
+                <button class="nav_title">Документы</button>
+                <div class="nav_link">
+                  <a href="#">Персональные данные</a>
+                  <a href="#">Приказ<br>о зачислении</a>
+                  <a href="#">Заявление<br>о согласии<br>на зачисление</a>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="nav_title" style="
+                .nav_title:hover:after,
+                .nav_title:focus:after {
+                    width: 80px;
+                }"
+                >Обучение</button>
+                <div class="nav_link">
+                  <a href="#">Персональные данные</a>
+                  <a href="#">Приказ о зачислении</a>
+                  <a href="#">Заявление о согласии<br>на зачисление</a>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="nav_title">Личный кабинет</button>
+                <div class="nav_link">
+                  <a href="#">Персональные данные</a>
+                  <a href="#">Приказ о зачислении</a>
+                  <a href="#">Заявление о согласии<br>на зачисление</a>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="nav_title">Рейтинг</button>
+                <div class="nav_link">
+                  <a href="#">Персональные данные</a>
+                  <a href="#">Приказ о зачислении</a>
+                  <a href="#">Заявление о согласии<br>на зачисление</a>
+                </div>
+            </div>
+
+            <div class="nav" style="margin-left: 100px;">
+                <button class="nav_title" style="cursor: pointer;" onclick="location='Profile.html'">Профиль</button>
+                <img class="icon_profile" src="photo/icons/user.png"> </div>
+            </div>
 	</div>
 </header>
 
@@ -87,14 +115,6 @@
     </div>
 </div>
 
-
-<div id="" class="popup_documents">
-        <div class="popup_documents_content">
-            <a class="popup_documents_title">Персональные данные</a>
-            <a class="popup_documents_title">Приказ о зачислении</a>
-            <a class="popup_documents_title">Заявление о согласии<br>на зачисление</a>
-    </div>
-</div>
 
 </body>
 </html>
