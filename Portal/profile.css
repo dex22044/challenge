@@ -1,37 +1,87 @@
-/* set */
+/* SET */
 .settings_profile {
-    width: 400px;
-    border-right: 1px solid #ffffff;
-    background-color: #50545e;
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    background-color: #303136;
+    align-items: center;
+    text-align: center;
 }
 
 .set_elem {
-    margin: 15px;
-    text-align: left;
-    padding-left: 200px;
-
+    margin: 20px;
+    text-transform: uppercase;
+    display: inline-flex;
+    cursor: pointer;
 }
+/* SET END */
 
-/* set end */
 
 
+
+
+/* INFO STUDENT */
 .info_student {
-    display:inline-flex;
-    flex-direction: row;
-    margin-left: 500px;
-    background-color: brown;
+    display: inline-flex;
+}
+/* INFO STUDENT END*/
+
+
+
+
+
+/* PHOTO */
+.info_photo_student {
+    overflow: hidden;
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.photo_student {
+    margin: 3%;
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    object-fit: cover;
+}
+/* PHOTO END */
+
+
+
+
+
+/* FIO */
+.fio {
+    background-color: #121214af;
+    border-radius: 15px;
+    border: 2px;
+    border-color: #37b9ff;
+    border-style: solid;
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 200px;
+    flex-direction: column;
+    display: flex;
 }
 
 .fio_elem {
     margin: 15px;
+    display: inline-flex;
+
 }
 
 .fio_content {
     font-weight: bold;
     text-align: left;
+    margin-left: 20px;
+}
+.fio_content_text {
+    margin-left: 20px;
+    text-align: left;
 
 }
+/* FIO END */
 
-.text_content {
 
-}
+
+
