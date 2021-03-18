@@ -24,64 +24,149 @@
 </head>
 
 <body>
-<header class="header">
-	<div class="container">
-		<div class="header_inner">
-			<a class="header_logo" href="Portal.html">Портал</a>
-			<nav class="nav" mouseenter="Underline()">
-				<a class="nav_link" href="#documents">Документы</a>
-				<a class="nav_link" href="#">Обучение</a>
-				<a class="nav_link" href="#">Личный кабинет</a>
-				<a class="nav_link" href="#">Рейтинг</a>
-
-			</nav>
-			<div class="profile">
-				<div class="profile_elem">
-					<a class="nav_link" href="#profile">Профиль</a>
-					<img class="cookie_monster_icon" style="width: 40px; height: 40px;" src="photo/icons/user.png">
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <a class="header_logo" href="Portal.html">Портал</a>
+    
+                <div class="nav">
+                    <button class="nav_title">Документы</button>
+                    <div class="nav_link">
+                      <a href="#">Персональные данные</a>
+                      <a href="#">Приказ<br>о зачислении</a>
+                      <a href="#">Заявление<br>о согласии<br>на зачисление</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <button class="nav_title">Обучение</button>
+                    <div class="nav_link">
+                      <a href="#">Персональные данные</a>
+                      <a href="#">Приказ о зачислении</a>
+                      <a href="#">Заявление о согласии<br>на зачисление</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <button class="nav_title">Личный кабинет</button>
+                    <div class="nav_link">
+                      <a href="#">Персональные данные</a>
+                      <a href="#">Приказ о зачислении</a>
+                      <a href="#">Заявление о согласии<br>на зачисление</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <button class="nav_title">Рейтинг</button>
+                    <div class="nav_link">
+                      <a href="#">Персональные данные</a>
+                      <a href="#">Приказ о зачислении</a>
+                      <a href="#">Заявление о согласии<br>на зачисление</a>
+                    </div>
+                </div>
+    
+                <div class="nav" style="margin-left: 100px;">
+                    <button class="nav_title" style="cursor: pointer;" onclick="location='Profile.html'">Профиль</button>
+                    <img class="icon_profile" src="photo/icons/user.png"> </div>
+                </div>
+        </div>
+    </header>
 
 <div class="content">
-	<a class="title_content">Личная страница</a>
+	<a class="title_content">Мои данные</a>
     <div class="settings_profile">
-        <div class="set">
-            <div class="set_elem">
-                <div class="text_content">Страница</div>
-            </div>
-            <div class="set_elem">
-                <div class="text_content">Данные</div>
-            </div>
-            <div class="set_elem">
-                <div class="text_content">Файлы</div>
-            </div>
+        <div class="set_elem">
+            <div class="text_content" style="
+                border-bottom: 3px solid #37b9ff;"
+            >Данные</div>
+        </div>
+        <div class="set_elem">
+            <div class="text_content">Файлы</div>
         </div>
     </div>
 
     <div class="info_student">
+        <div class="info_photo_student">
+            <img class="photo_student"src="photo/cat.jpg" alt="">
+            <button type="button" onclick="location='Profile.html'" class="button_enter"> <span>Изменить фото</span></button>
+        </div>   
+
         <div class="fio">
+	        <a class="title_content">Личные данные:</a>
+
             <div class="fio_elem">
-                <div class="fio_content">Фамилия: </div>
-                <div class="text_content">Дорохин</div>
+                <div class="fio_content">Фамилия:</div>
+                <div class="fio_content_text">Дорохин</div>
             </div>
             <div class="fio_elem">
-                <div class="fio_content">Имя: </div>
-                <div class="text_content">Артём</div>
+                <div class="fio_content">Имя:</div>
+                <div class="fio_content_text">Артём</div>
             </div>
             <div class="fio_elem">
-                <div class="fio_content">Отчество: </div>
-                <div class="text_content">Александрович</div>
+                <div class="fio_content">Отчество:</div>
+                <div class="fio_content_text">Александрович</div>
             </div>
             <div class="fio_elem">
-                <div class="fio_content">Дата рождения: </div>
-                <div class="text_content">22.01.2004</div>
+                <div class="fio_content">Дата рождения:</div>
+                <div class="fio_content_text">22.01.2004</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Место рождения:</div>
+                <div class="fio_content_text">Алушта, АР Крым, Украина</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Пол:</div>
+                <div class="fio_content_text">мужской</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Адрес:</div>
+                <div class="fio_content_text">298540, Алушта, Малый Маяк, Солнечная, 4</div>
             </div>
         </div>
+        
     </div>
 
+    <div class="info_student" style="margin-left: 100px;">
+        <div class="fio">
+            <a class="title_content">Корпоративные данные:</a>
+
+            <div class="fio_elem">
+                <div class="fio_content">Институт:</div>
+                <div class="fio_content_text">Информационной безопасности</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Специальность:</div>
+                <div class="fio_content_text">Обеспечение информационной безопасности телекоммуникационных систем</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Профиль / специализация / направленность:</div>
+                <div class="fio_content_text">нет</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Группа:</div>
+                <div class="fio_content_text">БТС1-19</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Год поступления:</div>
+                <div class="fio_content_text">2019</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Период обучения: </div>
+                <div class="fio_content_text">3 года 10 мес.</div>
+            </div>
+        </div>
+
+        <div class="fio" style="width: 300px; height: 250px;">
+            <a class="title_content">Контакты:</a>
+
+            <div class="fio_elem">
+                <div class="fio_content">Почта:</div>
+                <div class="fio_content_text">artdorokhin@ya.ru</div>
+            </div>
+            <div class="fio_elem">
+                <div class="fio_content">Телефон:</div>
+                <div class="fio_content_text">+7 (978) 884-37-54</div>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
